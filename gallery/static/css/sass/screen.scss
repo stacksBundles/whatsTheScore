@@ -1,0 +1,556 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+// NFL team colours from http://boards.sportslogos.net/topic/82401-nfl-team-color-codes/
+$Ari: #9B2743;
+$Ari2: #1E1E1E;
+$Atl: #A6192E;
+$Atl2: #1E1E1E;
+$Bal: #24135F;
+$Bal2: #FFFFFF;
+$Buf: #003087;
+$Buf2: #C8102E;
+$Car: #0085CA;
+$Car2: #101820;
+$Chi: #DC4405;
+$Chi2: #081F2C;
+$Cin: #FC4C02;
+$Cin2: #1E1E1E;
+$Cle: #FC4C02;
+$Cle2: #413322;
+$Dal: #0C2340;
+$Dal2: #858078;
+$Den: #0C2340;
+$Den2: #FC4C02;
+$Det: #00558C;
+$Det2: #8A8D8F;
+$GB: #183028;
+$GB2: #FFB81C;
+$Hou: #081F2C;
+$Hou2: #A6192E;
+$Ind: #003A70;
+$Ind2: #FFFFFF;
+$Jac: #006272;
+$Jac2: #1E1E1E;
+$KC: #A6192E;
+$KC2: #FFB81C;
+$Mia: #005F61;
+$Mia2: #FF642A;
+$Min: #330072;
+$Min2: #FFB81C;
+$NE: #0C2340;
+$NE2: #C8102E;
+$NO: #85714D;
+$NO2: #1E1E1E;
+$NYG: #001E62;
+$NYG2: #A6192E;
+$NYJ: #183028;
+$NYJ2: #FFFFFF;
+$Oak: #7D858A;
+$Oak2: #1E1E1E;
+$Phi: #004851;
+$Phi2: #54585A;
+$Pit: #1E1E1E;
+$Pit2: #FFB81C;
+$StL: #0C2340;
+$StL2: #85714D;
+$SD: #0072CE;
+$SD2: #FFB81C;
+$SF: #BB2B4B;
+$SF2: #85714D;
+$Sea: #213D5A;
+$Sea2: #43B02A;
+$TB: #A6192E;
+$TB2: #6F6B66;
+$Ten: #418FDE;
+$Ten2: #0C2340;
+$Was: #782F40;
+$Was2: #FFB81C;
+
+@mixin team($teamColor1) {
+	width: 100px;
+	height: 100px;
+	background-color: $teamColor1;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	color: rgb(255, 255, 255);
+	float: left;
+
+	
+}
+
+@mixin subheader {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+@mixin rounded {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+@mixin statstub($pos) {
+	float: $pos;
+	font-size: 90%;
+	// font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+
+.Det {
+	@include team($Det);
+	.rightblock {
+		background-color: $Det2;
+	}
+}
+
+.Bal {
+	@include team($Bal);
+	.rightblock {
+		background-color: $Bal2;
+		
+	}
+
+}
+
+.Cin {
+	@include team($Cin);
+	.rightblock {
+		background-color: $Cin2;
+		
+	}
+
+}
+
+.Pit {
+	@include team($Pit);
+	.rightblock {
+		background-color: $Pit2;
+		
+	}
+}
+
+.GB {
+	@include team($GB);
+	.rightblock {
+		background-color: $GB2;
+		
+	}
+
+}
+
+.Dal {
+	@include team($Dal);
+	.rightblock {
+		background-color: $Dal2;
+		
+	}
+
+}
+
+.NO {
+	@include team($NO);
+	.rightblock {
+		background-color: $NO2;
+		
+	}
+
+}
+
+.StL {
+	@include team($StL);
+	.rightblock {
+		background-color: $StL2;
+		
+	}
+
+}
+
+.Ari {
+	@include team($Ari);
+	.rightblock {
+		background-color: $Ari2;
+		
+	}
+
+}
+
+.Ten {
+	@include team($Ten);
+	.rightblock {
+		background-color: $Ten2;
+		
+	}
+
+}
+
+.KC {
+	@include team($KC);
+	.rightblock {
+		background-color: $KC2;
+		
+	}
+
+}
+
+.Oak {
+	@include team($Oak);
+	.rightblock {
+		background-color: $Oak2;
+		
+	}
+
+}
+
+.NYJ {
+	@include team($NYJ);
+	.rightblock {
+		background-color: $NYJ2;
+		
+	}
+
+}
+
+.Car {
+	.rightblock {
+		background-color: $Car2;
+		
+	}
+	@include team($Car);
+
+}
+
+.Hou {
+	@include team($Hou);
+	.rightblock {
+		background-color: $Hou2;
+		
+	}
+
+}
+
+.Ind {
+	@include team($Ind);
+	.rightblock {
+		background-color: $Ind2;
+		
+	}
+
+}
+
+.SF {
+	@include team($SF);
+	.rightblock {
+		background-color: $SF2;
+		
+	}
+
+}
+
+.TB {
+	@include team($TB);
+	.rightblock {
+		background-color: $TB2;
+		
+	}
+
+}
+
+.NE {
+	@include team($NE);
+	.rightblock {
+		background-color: $NE2;
+		
+	}
+
+}
+
+.Mia {
+	@include team($Mia);
+	.rightblock {
+		background-color: $Mia2;
+		
+	}
+
+}
+
+.Chi {
+	@include team($Chi);
+	.rightblock {
+		background-color: $Chi2;
+		
+	}
+
+}
+
+.Cle {
+	@include team($Cle);
+	.rightblock {
+		background-color: $Cle2;
+		
+	}
+
+}
+
+.Buf {
+	@include team($Buf);
+	.rightblock {
+		background-color: $Buf2;
+
+	}
+
+}
+
+.Jac {
+	@include team($Jac);
+	.rightblock {
+		background-color: $Jac2;
+		
+	}
+
+}
+
+.Phi {
+	@include team($Phi);
+	.rightblock {
+		background-color: $Phi2;
+		
+	}
+
+}
+
+.Min {
+	@include team($Min);
+	.rightblock {
+		background-color: $Min2;
+		
+	}
+
+}
+
+.Was {
+	@include team($Was);
+	.rightblock {
+		background-color: $Was2;
+		
+	}
+
+}
+
+.Atl {
+	@include team($Atl);
+	.rightblock {
+		background-color: $Atl2;
+		
+	}
+
+}
+
+.Sea {
+	@include team($Sea);
+	.rightblock {
+		background-color: $Sea2;
+		
+	}
+
+}
+
+.NYG {
+	@include team($NYG);
+	.rightblock {
+		background-color: $NYG2;
+		
+	}
+
+}
+
+.SD {
+	@include team($SD);
+	.rightblock {
+		background-color: $SD2;
+		
+	}
+
+}
+
+.Den {
+	@include team($Den);
+	.rightblock {
+		background-color: $Den2;
+		
+	}
+
+}
+
+.clearfix {
+	clear: both;
+}
+
+.kingkong {
+	margin-left: 40px;
+	margin-bottom: 40px;
+}
+
+.sidebar {
+	float: left;
+	background-color: rgb(240, 240, 240);
+	color: rgb(0, 0, 0);
+	padding: 16px 0 16px 0;
+	@include rounded;
+}
+
+.resultsBox {
+	float: left;
+	margin-left: 20px;
+	color: rgb(255, 255, 255);
+}
+
+.teambox {
+	float: left;
+	margin-right: 30px;
+	padding: 8px;
+	width: 300px;
+	min-height: 358px;
+	max-height: 358px;
+}
+
+.leftblock {
+	margin-left: 10px;
+	max-width: 255px;
+	float: left;
+}
+
+.rightblock {
+	margin-left: 40px;
+	min-height: 355px;
+	width: 40px;
+	float: left;
+	@include rounded;
+}
+
+.city {
+	@include subheader;
+}
+
+.name {
+	@include subheader;
+	margin-bottom: 4px;
+}
+
+.record {
+	margin-bottom: 16px;
+}
+
+.score {
+	font-size: 300%;
+	font-weight: bold;
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+
+.stub {
+	float: left;
+	padding: 2px 4px 2px 4px;
+	vertical-align: middle;
+	min-width: 130px;
+	font-size: 85%;
+	font-weight: bold;
+	margin-bottom: 4px;
+	margin-left: 16px;
+	@include rounded;
+}
+
+.stub:hover {
+	background-color: rgb(190, 190, 190);
+	color: rgb(230, 230, 250);
+	cursor: pointer;
+}
+
+.gameList {
+	margin-bottom: 20px;
+	vertical-align: middle;
+	text-align: center;
+
+	@include rounded;
+}
+
+.statsbox {
+	float: left;
+	background-color: rgb(255, 255, 255);
+	min-width: 200px;
+}
+
+.leftblock .nav .active .navlink {
+	color: rgb(0, 0, 0);
+}
+
+.navlink:hover {
+	cursor: pointer;
+}
+
+.statstype {
+	@include statstub(left);
+}
+
+.statsdata {
+	@include statstub(right);
+	margin-bottom: 8px;
+}
+
+.statsOff {
+	margin: 8px;
+}
+
+.statsDef {
+	margin: 8px;
+}
+
+#myTab {
+	margin-bottom: 0;
+}
+
+.leftblock .nav .navlink {
+		font-size: 90%;
+		font-weight: bold;
+		color: rgb(255, 255, 255);
+	}
+
+.footer {
+	background-color: rgb(200, 200, 230);
+	padding: 10px 20px 10px 20px;
+	@include rounded;
+	float: left;
+	margin-top: 40px;
+	text-align: center;
+
+	a {
+		float: left;
+		vertical-align: middle;
+		line-height: 30px;
+
+		img {
+			height: 30px;
+			margin-left: 10px;
+			@include rounded;
+			float: left;
+		}
+	}
+
+	div {
+		color: rgb(0, 0, 0);
+		margin-right: 15px;
+		margin-left: 15px;
+		float: left;
+		vertical-align: middle;
+		line-height: 30px;
+	}
+
+}
+
+.wapoLogo {
+	
+}

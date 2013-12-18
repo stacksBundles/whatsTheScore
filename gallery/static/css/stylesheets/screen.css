@@ -1,0 +1,747 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 104, ../sass/screen.scss */
+.Det {
+  width: 100px;
+  height: 100px;
+  background-color: #00558c;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 106, ../sass/screen.scss */
+.Det .rightblock {
+  background-color: #8a8d8f;
+}
+
+/* line 111, ../sass/screen.scss */
+.Bal {
+  width: 100px;
+  height: 100px;
+  background-color: #24135f;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 113, ../sass/screen.scss */
+.Bal .rightblock {
+  background-color: white;
+}
+
+/* line 120, ../sass/screen.scss */
+.Cin {
+  width: 100px;
+  height: 100px;
+  background-color: #fc4c02;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 122, ../sass/screen.scss */
+.Cin .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 129, ../sass/screen.scss */
+.Pit {
+  width: 100px;
+  height: 100px;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 131, ../sass/screen.scss */
+.Pit .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 137, ../sass/screen.scss */
+.GB {
+  width: 100px;
+  height: 100px;
+  background-color: #183028;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 139, ../sass/screen.scss */
+.GB .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 146, ../sass/screen.scss */
+.Dal {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 148, ../sass/screen.scss */
+.Dal .rightblock {
+  background-color: #858078;
+}
+
+/* line 155, ../sass/screen.scss */
+.NO {
+  width: 100px;
+  height: 100px;
+  background-color: #85714d;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 157, ../sass/screen.scss */
+.NO .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 164, ../sass/screen.scss */
+.StL {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 166, ../sass/screen.scss */
+.StL .rightblock {
+  background-color: #85714d;
+}
+
+/* line 173, ../sass/screen.scss */
+.Ari {
+  width: 100px;
+  height: 100px;
+  background-color: #9b2743;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 175, ../sass/screen.scss */
+.Ari .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 182, ../sass/screen.scss */
+.Ten {
+  width: 100px;
+  height: 100px;
+  background-color: #418fde;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 184, ../sass/screen.scss */
+.Ten .rightblock {
+  background-color: #0c2340;
+}
+
+/* line 191, ../sass/screen.scss */
+.KC {
+  width: 100px;
+  height: 100px;
+  background-color: #a6192e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 193, ../sass/screen.scss */
+.KC .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 200, ../sass/screen.scss */
+.Oak {
+  width: 100px;
+  height: 100px;
+  background-color: #7d858a;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 202, ../sass/screen.scss */
+.Oak .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 209, ../sass/screen.scss */
+.NYJ {
+  width: 100px;
+  height: 100px;
+  background-color: #183028;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 211, ../sass/screen.scss */
+.NYJ .rightblock {
+  background-color: white;
+}
+
+/* line 218, ../sass/screen.scss */
+.Car {
+  width: 100px;
+  height: 100px;
+  background-color: #0085ca;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 219, ../sass/screen.scss */
+.Car .rightblock {
+  background-color: #101820;
+}
+
+/* line 227, ../sass/screen.scss */
+.Hou {
+  width: 100px;
+  height: 100px;
+  background-color: #081f2c;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 229, ../sass/screen.scss */
+.Hou .rightblock {
+  background-color: #a6192e;
+}
+
+/* line 236, ../sass/screen.scss */
+.Ind {
+  width: 100px;
+  height: 100px;
+  background-color: #003a70;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 238, ../sass/screen.scss */
+.Ind .rightblock {
+  background-color: white;
+}
+
+/* line 245, ../sass/screen.scss */
+.SF {
+  width: 100px;
+  height: 100px;
+  background-color: #bb2b4b;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 247, ../sass/screen.scss */
+.SF .rightblock {
+  background-color: #85714d;
+}
+
+/* line 254, ../sass/screen.scss */
+.TB {
+  width: 100px;
+  height: 100px;
+  background-color: #a6192e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 256, ../sass/screen.scss */
+.TB .rightblock {
+  background-color: #6f6b66;
+}
+
+/* line 263, ../sass/screen.scss */
+.NE {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 265, ../sass/screen.scss */
+.NE .rightblock {
+  background-color: #c8102e;
+}
+
+/* line 272, ../sass/screen.scss */
+.Mia {
+  width: 100px;
+  height: 100px;
+  background-color: #005f61;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 274, ../sass/screen.scss */
+.Mia .rightblock {
+  background-color: #ff642a;
+}
+
+/* line 281, ../sass/screen.scss */
+.Chi {
+  width: 100px;
+  height: 100px;
+  background-color: #dc4405;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 283, ../sass/screen.scss */
+.Chi .rightblock {
+  background-color: #081f2c;
+}
+
+/* line 290, ../sass/screen.scss */
+.Cle {
+  width: 100px;
+  height: 100px;
+  background-color: #fc4c02;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 292, ../sass/screen.scss */
+.Cle .rightblock {
+  background-color: #413322;
+}
+
+/* line 299, ../sass/screen.scss */
+.Buf {
+  width: 100px;
+  height: 100px;
+  background-color: #003087;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 301, ../sass/screen.scss */
+.Buf .rightblock {
+  background-color: #c8102e;
+}
+
+/* line 308, ../sass/screen.scss */
+.Jac {
+  width: 100px;
+  height: 100px;
+  background-color: #006272;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 310, ../sass/screen.scss */
+.Jac .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 317, ../sass/screen.scss */
+.Phi {
+  width: 100px;
+  height: 100px;
+  background-color: #004851;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 319, ../sass/screen.scss */
+.Phi .rightblock {
+  background-color: #54585a;
+}
+
+/* line 326, ../sass/screen.scss */
+.Min {
+  width: 100px;
+  height: 100px;
+  background-color: #330072;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 328, ../sass/screen.scss */
+.Min .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 335, ../sass/screen.scss */
+.Was {
+  width: 100px;
+  height: 100px;
+  background-color: #782f40;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 337, ../sass/screen.scss */
+.Was .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 344, ../sass/screen.scss */
+.Atl {
+  width: 100px;
+  height: 100px;
+  background-color: #a6192e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 346, ../sass/screen.scss */
+.Atl .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 353, ../sass/screen.scss */
+.Sea {
+  width: 100px;
+  height: 100px;
+  background-color: #213d5a;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 355, ../sass/screen.scss */
+.Sea .rightblock {
+  background-color: #43b02a;
+}
+
+/* line 362, ../sass/screen.scss */
+.NYG {
+  width: 100px;
+  height: 100px;
+  background-color: #001e62;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 364, ../sass/screen.scss */
+.NYG .rightblock {
+  background-color: #a6192e;
+}
+
+/* line 371, ../sass/screen.scss */
+.SD {
+  width: 100px;
+  height: 100px;
+  background-color: #0072ce;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 373, ../sass/screen.scss */
+.SD .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 380, ../sass/screen.scss */
+.Den {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+}
+/* line 382, ../sass/screen.scss */
+.Den .rightblock {
+  background-color: #fc4c02;
+}
+
+/* line 389, ../sass/screen.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 393, ../sass/screen.scss */
+.kingkong {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 398, ../sass/screen.scss */
+.sidebar {
+  float: left;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 16px 0 16px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 406, ../sass/screen.scss */
+.resultsBox {
+  float: left;
+  margin-left: 20px;
+  color: white;
+}
+
+/* line 412, ../sass/screen.scss */
+.teambox {
+  float: left;
+  margin-right: 30px;
+  padding: 8px;
+  width: 300px;
+  min-height: 358px;
+  max-height: 358px;
+}
+
+/* line 421, ../sass/screen.scss */
+.leftblock {
+  margin-left: 10px;
+  max-width: 255px;
+  float: left;
+}
+
+/* line 427, ../sass/screen.scss */
+.rightblock {
+  margin-left: 40px;
+  min-height: 355px;
+  width: 40px;
+  float: left;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 435, ../sass/screen.scss */
+.city {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+/* line 439, ../sass/screen.scss */
+.name {
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 4px;
+}
+
+/* line 444, ../sass/screen.scss */
+.record {
+  margin-bottom: 16px;
+}
+
+/* line 448, ../sass/screen.scss */
+.score {
+  font-size: 300%;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+/* line 455, ../sass/screen.scss */
+.stub {
+  float: left;
+  padding: 2px 4px 2px 4px;
+  vertical-align: middle;
+  min-width: 130px;
+  font-size: 85%;
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-left: 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 467, ../sass/screen.scss */
+.stub:hover {
+  background-color: #bebebe;
+  color: lavender;
+  cursor: pointer;
+}
+
+/* line 473, ../sass/screen.scss */
+.gameList {
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 481, ../sass/screen.scss */
+.statsbox {
+  float: left;
+  background-color: white;
+  min-width: 200px;
+}
+
+/* line 487, ../sass/screen.scss */
+.leftblock .nav .active .navlink {
+  color: black;
+}
+
+/* line 491, ../sass/screen.scss */
+.navlink:hover {
+  cursor: pointer;
+}
+
+/* line 495, ../sass/screen.scss */
+.statstype {
+  float: left;
+  font-size: 90%;
+  color: black;
+}
+
+/* line 499, ../sass/screen.scss */
+.statsdata {
+  float: right;
+  font-size: 90%;
+  color: black;
+  margin-bottom: 8px;
+}
+
+/* line 504, ../sass/screen.scss */
+.statsOff {
+  margin: 8px;
+}
+
+/* line 508, ../sass/screen.scss */
+.statsDef {
+  margin: 8px;
+}
+
+/* line 512, ../sass/screen.scss */
+#myTab {
+  margin-bottom: 0;
+}
+
+/* line 516, ../sass/screen.scss */
+.leftblock .nav .navlink {
+  font-size: 90%;
+  font-weight: bold;
+  color: white;
+}
+
+/* line 522, ../sass/screen.scss */
+.footer {
+  background-color: #c8c8e6;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  float: left;
+  margin-top: 40px;
+  text-align: center;
+}
+/* line 530, ../sass/screen.scss */
+.footer a {
+  float: left;
+  vertical-align: middle;
+  line-height: 30px;
+}
+/* line 535, ../sass/screen.scss */
+.footer a img {
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  float: left;
+}
+/* line 543, ../sass/screen.scss */
+.footer div {
+  color: black;
+  margin-right: 15px;
+  margin-left: 15px;
+  float: left;
+  vertical-align: middle;
+  line-height: 30px;
+}
