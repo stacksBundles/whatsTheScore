@@ -2,7 +2,7 @@ whatsTheScore
 =============
 
 <h4>What does it do?</h4>
-The app uses the Washington Post Sports API to fetch and display stats from the week 15 NFL games. Visit <a href='http://iainmingo.com/'>iainmingo.com</a> to see for yourself.
+The app uses the <a href='http://apps.washingtonpost.com/sports/'>Washington Post Sports API</a> to fetch and display stats from the week 15 NFL games. Visit <a href='http://iainmingo.com/'>iainmingo.com</a> to see for yourself.
 
 <h4>Why only week 15 stats?</h4>
 Unfortunately the WaPo Sports API isn't very well documented (read: undocumented) and I haven't been able to decode the URIs, so the gamecodes are hardcoded.
