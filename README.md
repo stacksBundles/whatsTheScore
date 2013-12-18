@@ -1,6 +1,5 @@
 whatsTheScore
 =============
-<h1>Demo app</h1>
 
 <h4>What does it do</h4>
 The app uses the Washington Post Sports API to fetch and display stats from the week 15 NFL games. Visit <a href='http://iainmingo.com/'>iainmingo.com</a> to see for yourself.
