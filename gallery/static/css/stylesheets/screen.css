@@ -67,7 +67,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .Det {
   width: 100px;
   height: 100px;
@@ -76,13 +76,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 106, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .Det .rightblock {
   background-color: #8a8d8f;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .Bal {
   width: 100px;
   height: 100px;
@@ -91,13 +94,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 113, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .Bal .rightblock {
   background-color: white;
 }
 
-/* line 120, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .Cin {
   width: 100px;
   height: 100px;
@@ -106,13 +112,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 122, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .Cin .rightblock {
   background-color: #1e1e1e;
 }
 
-/* line 129, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .Pit {
   width: 100px;
   height: 100px;
@@ -121,13 +130,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 131, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .Pit .rightblock {
   background-color: #ffb81c;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .GB {
   width: 100px;
   height: 100px;
@@ -136,13 +148,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 139, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .GB .rightblock {
   background-color: #ffb81c;
 }
 
-/* line 146, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .Dal {
   width: 100px;
   height: 100px;
@@ -151,13 +166,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 148, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .Dal .rightblock {
   background-color: #858078;
 }
 
-/* line 155, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .NO {
   width: 100px;
   height: 100px;
@@ -166,13 +184,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 157, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 .NO .rightblock {
   background-color: #1e1e1e;
 }
 
-/* line 164, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .StL {
   width: 100px;
   height: 100px;
@@ -181,13 +202,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 166, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .StL .rightblock {
   background-color: #85714d;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .Ari {
   width: 100px;
   height: 100px;
@@ -196,13 +220,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 175, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .Ari .rightblock {
   background-color: #1e1e1e;
 }
 
-/* line 182, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .Ten {
   width: 100px;
   height: 100px;
@@ -211,13 +238,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 184, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .Ten .rightblock {
   background-color: #0c2340;
 }
 
-/* line 191, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .KC {
   width: 100px;
   height: 100px;
@@ -226,13 +256,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 193, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .KC .rightblock {
   background-color: #ffb81c;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 .Oak {
   width: 100px;
   height: 100px;
@@ -241,13 +274,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 202, ../sass/screen.scss */
+/* line 204, ../sass/screen.scss */
 .Oak .rightblock {
   background-color: #1e1e1e;
 }
 
-/* line 209, ../sass/screen.scss */
+/* line 211, ../sass/screen.scss */
 .NYJ {
   width: 100px;
   height: 100px;
@@ -256,13 +292,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 211, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 .NYJ .rightblock {
   background-color: white;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .Car {
   width: 100px;
   height: 100px;
@@ -271,13 +310,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 219, ../sass/screen.scss */
+/* line 221, ../sass/screen.scss */
 .Car .rightblock {
   background-color: #101820;
 }
 
-/* line 227, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .Hou {
   width: 100px;
   height: 100px;
@@ -286,13 +328,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 229, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .Hou .rightblock {
   background-color: #a6192e;
 }
 
-/* line 236, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .Ind {
   width: 100px;
   height: 100px;
@@ -301,13 +346,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 238, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .Ind .rightblock {
   background-color: white;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 .SF {
   width: 100px;
   height: 100px;
@@ -316,13 +364,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 247, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .SF .rightblock {
   background-color: #85714d;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .TB {
   width: 100px;
   height: 100px;
@@ -331,13 +382,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 256, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .TB .rightblock {
   background-color: #6f6b66;
 }
 
-/* line 263, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .NE {
   width: 100px;
   height: 100px;
@@ -346,13 +400,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 265, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .NE .rightblock {
   background-color: #c8102e;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 .Mia {
   width: 100px;
   height: 100px;
@@ -361,13 +418,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 274, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .Mia .rightblock {
   background-color: #ff642a;
 }
 
-/* line 281, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .Chi {
   width: 100px;
   height: 100px;
@@ -376,13 +436,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 283, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .Chi .rightblock {
   background-color: #081f2c;
 }
 
-/* line 290, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .Cle {
   width: 100px;
   height: 100px;
@@ -391,13 +454,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 292, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 .Cle .rightblock {
   background-color: #413322;
 }
 
-/* line 299, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .Buf {
   width: 100px;
   height: 100px;
@@ -406,13 +472,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 301, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .Buf .rightblock {
   background-color: #c8102e;
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .Jac {
   width: 100px;
   height: 100px;
@@ -421,13 +490,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 310, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .Jac .rightblock {
   background-color: #1e1e1e;
 }
 
-/* line 317, ../sass/screen.scss */
+/* line 319, ../sass/screen.scss */
 .Phi {
   width: 100px;
   height: 100px;
@@ -436,13 +508,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 319, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 .Phi .rightblock {
   background-color: #54585a;
 }
 
-/* line 326, ../sass/screen.scss */
+/* line 328, ../sass/screen.scss */
 .Min {
   width: 100px;
   height: 100px;
@@ -451,13 +526,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 328, ../sass/screen.scss */
+/* line 330, ../sass/screen.scss */
 .Min .rightblock {
   background-color: #ffb81c;
 }
 
-/* line 335, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .Was {
   width: 100px;
   height: 100px;
@@ -466,13 +544,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 337, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .Was .rightblock {
   background-color: #ffb81c;
 }
 
-/* line 344, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .Atl {
   width: 100px;
   height: 100px;
@@ -481,13 +562,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 346, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .Atl .rightblock {
   background-color: #1e1e1e;
 }
 
-/* line 353, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .Sea {
   width: 100px;
   height: 100px;
@@ -496,13 +580,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 355, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .Sea .rightblock {
   background-color: #43b02a;
 }
 
-/* line 362, ../sass/screen.scss */
+/* line 364, ../sass/screen.scss */
 .NYG {
   width: 100px;
   height: 100px;
@@ -511,13 +598,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 364, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .NYG .rightblock {
   background-color: #a6192e;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .SD {
   width: 100px;
   height: 100px;
@@ -526,13 +616,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 373, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 .SD .rightblock {
   background-color: #ffb81c;
 }
 
-/* line 380, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .Den {
   width: 100px;
   height: 100px;
@@ -541,24 +634,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   color: white;
   float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
 }
-/* line 382, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .Den .rightblock {
   background-color: #fc4c02;
 }
 
-/* line 389, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 395, ../sass/screen.scss */
 .kingkong {
   margin-left: 40px;
   margin-bottom: 40px;
 }
 
-/* line 398, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .sidebar {
   float: left;
   background-color: #f0f0f0;
@@ -568,14 +664,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
 }
 
-/* line 406, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .resultsBox {
   float: left;
   margin-left: 20px;
   color: white;
 }
 
-/* line 412, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 .teambox {
   float: left;
   margin-right: 30px;
@@ -585,14 +681,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   max-height: 358px;
 }
 
-/* line 421, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .leftblock {
   margin-left: 10px;
   max-width: 255px;
   float: left;
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .rightblock {
   margin-left: 40px;
   min-height: 355px;
@@ -602,25 +698,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
 }
 
-/* line 435, ../sass/screen.scss */
+/* line 437, ../sass/screen.scss */
 .city {
   font-weight: bold;
   font-size: 110%;
 }
 
-/* line 439, ../sass/screen.scss */
+/* line 441, ../sass/screen.scss */
 .name {
   font-weight: bold;
   font-size: 110%;
   margin-bottom: 4px;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 .record {
   margin-bottom: 16px;
 }
 
-/* line 448, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .score {
   font-size: 300%;
   font-weight: bold;
@@ -628,7 +724,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 16px;
 }
 
-/* line 455, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .stub {
   float: left;
   padding: 2px 4px 2px 4px;
@@ -642,14 +738,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
 }
 
-/* line 467, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 .stub:hover {
   background-color: #bebebe;
   color: lavender;
   cursor: pointer;
 }
 
-/* line 473, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 .gameList {
   margin-bottom: 20px;
   vertical-align: middle;
@@ -658,31 +754,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
 }
 
-/* line 481, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 .statsbox {
   float: left;
   background-color: white;
   min-width: 200px;
 }
 
-/* line 487, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 .leftblock .nav .active .navlink {
   color: black;
 }
 
-/* line 491, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .navlink:hover {
   cursor: pointer;
 }
 
-/* line 495, ../sass/screen.scss */
+/* line 497, ../sass/screen.scss */
 .statstype {
   float: left;
   font-size: 90%;
   color: black;
 }
 
-/* line 499, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .statsdata {
   float: right;
   font-size: 90%;
@@ -690,29 +786,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 8px;
 }
 
-/* line 504, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .statsOff {
   margin: 8px;
 }
 
-/* line 508, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .statsDef {
   margin: 8px;
 }
 
-/* line 512, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 #myTab {
   margin-bottom: 0;
 }
 
-/* line 516, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .leftblock .nav .navlink {
   font-size: 90%;
   font-weight: bold;
   color: white;
 }
 
-/* line 522, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 .footer {
   background-color: #c8c8e6;
   padding: 10px 20px 10px 20px;
@@ -722,13 +818,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 40px;
   text-align: center;
 }
-/* line 530, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .footer a {
   float: left;
   vertical-align: middle;
   line-height: 30px;
 }
-/* line 535, ../sass/screen.scss */
+/* line 537, ../sass/screen.scss */
 .footer a img {
   height: 30px;
   margin-left: 10px;
@@ -736,7 +832,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   float: left;
 }
-/* line 543, ../sass/screen.scss */
+/* line 545, ../sass/screen.scss */
 .footer div {
   color: black;
   margin-right: 15px;
@@ -744,4 +840,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   float: left;
   vertical-align: middle;
   line-height: 30px;
+}
+
+/* line 557, ../sass/screen.scss */
+.fadeOut {
+  opacity: 0;
 }
