@@ -431,7 +431,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .Chi {
   width: 100px;
   height: 100px;
-  background-color: #dc4405;
+  background-color: #081f2c;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   color: white;
@@ -442,7 +442,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 /* line 285, ../sass/screen.scss */
 .Chi .rightblock {
-  background-color: #081f2c;
+  background-color: #dc4405;
 }
 
 /* line 292, ../sass/screen.scss */
@@ -650,13 +650,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 395, ../sass/screen.scss */
 .kingkong {
-  margin-left: 40px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 40px;
+  width: 200px;
+}
+/* line 401, ../sass/screen.scss */
+.kingkong img {
+  width: 200px;
 }
 
-/* line 400, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 .sidebar {
-  float: left;
+  display: inline;
   background-color: #f0f0f0;
   color: black;
   padding: 16px 0 16px 0;
@@ -664,59 +670,118 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
 }
 
-/* line 408, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 .resultsBox {
   float: left;
-  margin-left: 20px;
+  margin-left: 80px;
   color: white;
+  min-width: 300px;
 }
 
-/* line 414, ../sass/screen.scss */
+/* line 421, ../sass/screen.scss */
 .teambox {
   float: left;
-  margin-right: 30px;
+  margin-right: 10px;
+  margin-top: 20px;
   padding: 8px;
-  width: 300px;
-  min-height: 358px;
-  max-height: 358px;
+  width: 220px;
+  min-height: 388px;
+  max-height: 388px;
 }
 
-/* line 423, ../sass/screen.scss */
-.leftblock {
-  margin-left: 10px;
-  max-width: 255px;
-  float: left;
-}
-
-/* line 429, ../sass/screen.scss */
+/* line 431, ../sass/screen.scss */
 .rightblock {
-  margin-left: 40px;
-  min-height: 355px;
-  width: 40px;
+  margin-top: 10px;
+  margin-left: 10px;
+  min-height: 20px;
+  width: 200px;
   float: left;
   border-radius: 4px;
   -webkit-border-radius: 4px;
 }
 
-/* line 437, ../sass/screen.scss */
+@media screen and (min-width: 1000px) {
+  /* line 441, ../sass/screen.scss */
+  .resultsBox {
+    float: left;
+    margin-left: 20px;
+    color: white;
+    min-width: 700px;
+  }
+
+  /* line 448, ../sass/screen.scss */
+  .teambox {
+    float: left;
+    margin-right: 30px;
+    padding: 8px;
+    width: 300px;
+    min-height: 358px;
+    max-height: 358px;
+  }
+
+  /* line 457, ../sass/screen.scss */
+  .sidebar {
+    float: left;
+    background-color: #f0f0f0;
+    color: black;
+    padding: 16px 0 16px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+
+  /* line 465, ../sass/screen.scss */
+  .leftblock {
+    margin-left: 10px;
+    max-width: 255px;
+    float: left;
+  }
+
+  /* line 471, ../sass/screen.scss */
+  .rightblock {
+    margin-left: 40px;
+    min-height: 345px;
+    width: 40px;
+    float: left;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+  }
+
+  /* line 479, ../sass/screen.scss */
+  .kingkong {
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+  /* line 483, ../sass/screen.scss */
+  .kingkong img {
+    width: 200px;
+  }
+}
+/* line 489, ../sass/screen.scss */
+.leftblock {
+  margin-left: 10px;
+  max-width: 455px;
+  float: left;
+}
+
+/* line 495, ../sass/screen.scss */
 .city {
   font-weight: bold;
   font-size: 110%;
 }
 
-/* line 441, ../sass/screen.scss */
+/* line 499, ../sass/screen.scss */
 .name {
   font-weight: bold;
   font-size: 110%;
   margin-bottom: 4px;
 }
 
-/* line 446, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 .record {
   margin-bottom: 16px;
 }
 
-/* line 450, ../sass/screen.scss */
+/* line 508, ../sass/screen.scss */
 .score {
   font-size: 300%;
   font-weight: bold;
@@ -724,7 +789,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 16px;
 }
 
-/* line 457, ../sass/screen.scss */
+/* line 515, ../sass/screen.scss */
 .stub {
   float: left;
   padding: 2px 4px 2px 4px;
@@ -738,14 +803,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
 }
 
-/* line 469, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 .stub:hover {
   background-color: #bebebe;
   color: lavender;
   cursor: pointer;
 }
 
-/* line 475, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 .gameList {
   margin-bottom: 20px;
   vertical-align: middle;
@@ -754,31 +819,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
 }
 
-/* line 483, ../sass/screen.scss */
+/* line 541, ../sass/screen.scss */
 .statsbox {
   float: left;
   background-color: white;
   min-width: 200px;
 }
 
-/* line 489, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 .leftblock .nav .active .navlink {
   color: black;
 }
 
-/* line 493, ../sass/screen.scss */
+/* line 551, ../sass/screen.scss */
 .navlink:hover {
   cursor: pointer;
 }
 
-/* line 497, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 .statstype {
   float: left;
   font-size: 90%;
   color: black;
 }
 
-/* line 501, ../sass/screen.scss */
+/* line 559, ../sass/screen.scss */
 .statsdata {
   float: right;
   font-size: 90%;
@@ -786,29 +851,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 8px;
 }
 
-/* line 506, ../sass/screen.scss */
+/* line 564, ../sass/screen.scss */
 .statsOff {
   margin: 8px;
 }
 
-/* line 510, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 .statsDef {
   margin: 8px;
 }
 
-/* line 514, ../sass/screen.scss */
+/* line 572, ../sass/screen.scss */
 #myTab {
   margin-bottom: 0;
 }
 
-/* line 518, ../sass/screen.scss */
+/* line 576, ../sass/screen.scss */
 .leftblock .nav .navlink {
   font-size: 90%;
   font-weight: bold;
   color: white;
 }
 
-/* line 524, ../sass/screen.scss */
+/* line 582, ../sass/screen.scss */
 .footer {
   background-color: #c8c8e6;
   padding: 10px 20px 10px 20px;
@@ -818,13 +883,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-top: 40px;
   text-align: center;
 }
-/* line 532, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 .footer a {
   float: left;
   vertical-align: middle;
   line-height: 30px;
 }
-/* line 537, ../sass/screen.scss */
+/* line 595, ../sass/screen.scss */
 .footer a img {
   height: 30px;
   margin-left: 10px;
@@ -832,7 +897,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   float: left;
 }
-/* line 545, ../sass/screen.scss */
+/* line 603, ../sass/screen.scss */
 .footer div {
   color: black;
   margin-right: 15px;
@@ -842,7 +907,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 30px;
 }
 
-/* line 557, ../sass/screen.scss */
+/* line 615, ../sass/screen.scss */
 .fadeOut {
   opacity: 0;
 }

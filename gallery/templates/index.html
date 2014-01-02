@@ -6,7 +6,8 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
- 	<link href="{% static 'css/stylesheets/screen.css' %}" rel="stylesheet" type="text/css"></link>
+ 	<link media="screen and (max-width: 600px)" href="{% static 'css/stylesheets/print.css' %}" rel="stylesheet" type="text/css"></link>
+ 	<link media="screen" href="{% static 'css/stylesheets/screen.css' %}" rel="stylesheet" type="text/css"></link>
  	<link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css' rel='stylesheet' type='text/css'>
  </head>
 
@@ -14,7 +15,7 @@
  <body ng-app='ScaffoldsApp'>
  	{% verbatim %}
  	<div class='well'>
-	 	<div class='container-fluid' ng-view=''>
+	 	<div class='container' ng-view=''>
 	 		
 		</div>
 	</div>

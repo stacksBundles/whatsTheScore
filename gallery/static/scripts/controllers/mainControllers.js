@@ -14,44 +14,44 @@ controllers.controller('MainCtrl', function($scope, queryService, $http) {
 	// value of xxx isn't explained and isn't intuitive. 
 	$scope.games = [
 		{
-			HOME: 'BAL',
-			AWAY: 'DET',
-			CODE: 20131216008
-		},
-		{
-			HOME: 'CIN',
-			AWAY: 'PIT',
-			CODE: 20131215023
-		},
-		{
-			HOME: 'GB',
-			AWAY: 'DAL',
-			CODE: 20131215006
-		},
-		{
-			HOME: 'NO',
-			AWAY: 'STL',
-			CODE: 20131215014
-		},
-		{
-			HOME: 'ARZ',
-			AWAY: 'TEN',
-			CODE: 20131215010
-		},
-		{
 			HOME: 'KC',
-			AWAY: 'OAK',
-			CODE: 20131215013
+			AWAY: 'IND',
+			CODE: 20131222012
+		},
+		{
+			HOME: 'BUF',
+			AWAY: 'MIA',
+			CODE: 20131222002
+		},
+		{
+			HOME: 'CAR',
+			AWAY: 'NO',
+			CODE: 20131222029
 		},
 		{
 			HOME: 'NYJ',
-			AWAY: 'CAR',
-			CODE: 20131215029
+			AWAY: 'CLE',
+			CODE: 20131222020
 		},
 		{
-			HOME: 'HOU',
-			AWAY: 'IND',
-			CODE: 20131215011
+			HOME: 'STL',
+			AWAY: 'TB',
+			CODE: 20131222014
+		},
+		{
+			HOME: 'WAS',
+			AWAY: 'DAL',
+			CODE: 20131222028
+		},
+		{
+			HOME: 'JAX',
+			AWAY: 'TEN',
+			CODE: 20131222030
+		},
+		{
+			HOME: 'CIN',
+			AWAY: 'MIN',
+			CODE: 20131222004
 		},
 		{
 			HOME: 'SF',

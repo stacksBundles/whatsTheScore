@@ -17,8 +17,8 @@ $Buf: #003087;
 $Buf2: #C8102E;
 $Car: #0085CA;
 $Car2: #101820;
-$Chi: #DC4405;
-$Chi2: #081F2C;
+$Chi: #081F2C;
+$Chi2: #DC4405;
 $Cin: #FC4C02;
 $Cin2: #1E1E1E;
 $Cle: #FC4C02;
@@ -393,12 +393,18 @@ $Was2: #FFB81C;
 }
 
 .kingkong {
-	margin-left: 40px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 40px;
+	width: 200px;
+
+	img {
+		width: 200px;
+	}
 }
 
 .sidebar {
-	float: left;
+	display: inline;
 	background-color: rgb(240, 240, 240);
 	color: rgb(0, 0, 0);
 	padding: 16px 0 16px 0;
@@ -407,31 +413,83 @@ $Was2: #FFB81C;
 
 .resultsBox {
 	float: left;
-	margin-left: 20px;
+	margin-left: 80px;
 	color: rgb(255, 255, 255);
+	min-width: 300px;
 }
 
 .teambox {
 	float: left;
-	margin-right: 30px;
+	margin-right: 10px;
+	margin-top: 20px;
 	padding: 8px;
-	width: 300px;
-	min-height: 358px;
-	max-height: 358px;
+	width: 220px;
+	min-height: 388px;
+	max-height: 388px;
+}
+
+.rightblock {
+	margin-top: 10px;
+	margin-left: 10px;
+	min-height: 20px;
+	width: 200px;
+	float: left;
+	@include rounded;
+}
+
+@media screen and (min-width: 1000px) {
+	.resultsBox {
+		float: left;
+		margin-left: 20px;
+		color: rgb(255, 255, 255);
+		min-width: 700px;
+	}
+
+	.teambox {
+		float: left;
+		margin-right: 30px;
+		padding: 8px;
+		width: 300px;
+		min-height: 358px;
+		max-height: 358px;
+	}
+
+	.sidebar {
+		float: left;
+		background-color: rgb(240, 240, 240);
+		color: rgb(0, 0, 0);
+		padding: 16px 0 16px 0;
+		@include rounded;
+	}
+
+	.leftblock {
+		margin-left: 10px;
+		max-width: 255px;
+		float: left;
+	}
+
+	.rightblock {
+		margin-left: 40px;
+		min-height: 345px;
+		width: 40px;
+		float: left;
+		@include rounded;
+	}
+
+	.kingkong {
+		margin-left: 40px;
+		margin-bottom: 40px;
+
+		img {
+			width: 200px;
+		}
+	}
 }
 
 .leftblock {
 	margin-left: 10px;
-	max-width: 255px;
+	max-width: 455px;
 	float: left;
-}
-
-.rightblock {
-	margin-left: 40px;
-	min-height: 355px;
-	width: 40px;
-	float: left;
-	@include rounded;
 }
 
 .city {

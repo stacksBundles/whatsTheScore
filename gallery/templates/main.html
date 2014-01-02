@@ -1,15 +1,15 @@
-<div class="kingkong">
-  <h1>Demo</h1>
-</div>
 {% load staticfiles %}
+<div class="kingkong">
+  <img src="{% static 'images/mainLogo.png'  %}"></img>
+</div>
 {% verbatim %}
-<div class='span2 sidebar'>
+<div class='sidebar'>
 	<div class="gameList" ng-repeat='game in games'>
 		<stub class='stub' ng-click='loadgame(game.CODE)'>{{ game.HOME + ' @ ' + game.AWAY }}</stub>
 	</div>
 </div>
 
-<div class='resultsBox span10' ng-show='display'>
+<div class='resultsBox' ng-show='display'>
 	<teambox isoloaded="loaded" class='teambox' ng-class='isoloaded.home_team.alias'>
 		<div class='leftblock'>
 			<div class='score'>{{ isoloaded.home_total_score }}</div>

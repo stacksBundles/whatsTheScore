@@ -1,3 +1,783 @@
 /* Welcome to Compass. Use this file to define print styles.
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 101, ../sass/print.scss */
+.Det {
+  width: 100px;
+  height: 100px;
+  background-color: #00558c;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 103, ../sass/print.scss */
+.Det .rightblock {
+  background-color: #8a8d8f;
+}
+
+/* line 108, ../sass/print.scss */
+.Bal {
+  width: 100px;
+  height: 100px;
+  background-color: #24135f;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 110, ../sass/print.scss */
+.Bal .rightblock {
+  background-color: white;
+}
+
+/* line 117, ../sass/print.scss */
+.Cin {
+  width: 100px;
+  height: 100px;
+  background-color: #fc4c02;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 119, ../sass/print.scss */
+.Cin .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 126, ../sass/print.scss */
+.Pit {
+  width: 100px;
+  height: 100px;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 128, ../sass/print.scss */
+.Pit .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 134, ../sass/print.scss */
+.GB {
+  width: 100px;
+  height: 100px;
+  background-color: #183028;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 136, ../sass/print.scss */
+.GB .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 143, ../sass/print.scss */
+.Dal {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 145, ../sass/print.scss */
+.Dal .rightblock {
+  background-color: #858078;
+}
+
+/* line 152, ../sass/print.scss */
+.NO {
+  width: 100px;
+  height: 100px;
+  background-color: #85714d;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 154, ../sass/print.scss */
+.NO .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 161, ../sass/print.scss */
+.StL {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 163, ../sass/print.scss */
+.StL .rightblock {
+  background-color: #85714d;
+}
+
+/* line 170, ../sass/print.scss */
+.Ari {
+  width: 100px;
+  height: 100px;
+  background-color: #9b2743;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 172, ../sass/print.scss */
+.Ari .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 179, ../sass/print.scss */
+.Ten {
+  width: 100px;
+  height: 100px;
+  background-color: #418fde;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 181, ../sass/print.scss */
+.Ten .rightblock {
+  background-color: #0c2340;
+}
+
+/* line 188, ../sass/print.scss */
+.KC {
+  width: 100px;
+  height: 100px;
+  background-color: #a6192e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 190, ../sass/print.scss */
+.KC .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 197, ../sass/print.scss */
+.Oak {
+  width: 100px;
+  height: 100px;
+  background-color: #7d858a;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 199, ../sass/print.scss */
+.Oak .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 206, ../sass/print.scss */
+.NYJ {
+  width: 100px;
+  height: 100px;
+  background-color: #183028;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 208, ../sass/print.scss */
+.NYJ .rightblock {
+  background-color: white;
+}
+
+/* line 215, ../sass/print.scss */
+.Car {
+  width: 100px;
+  height: 100px;
+  background-color: #0085ca;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 216, ../sass/print.scss */
+.Car .rightblock {
+  background-color: #101820;
+}
+
+/* line 224, ../sass/print.scss */
+.Hou {
+  width: 100px;
+  height: 100px;
+  background-color: #081f2c;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 226, ../sass/print.scss */
+.Hou .rightblock {
+  background-color: #a6192e;
+}
+
+/* line 233, ../sass/print.scss */
+.Ind {
+  width: 100px;
+  height: 100px;
+  background-color: #003a70;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 235, ../sass/print.scss */
+.Ind .rightblock {
+  background-color: white;
+}
+
+/* line 242, ../sass/print.scss */
+.SF {
+  width: 100px;
+  height: 100px;
+  background-color: #bb2b4b;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 244, ../sass/print.scss */
+.SF .rightblock {
+  background-color: #85714d;
+}
+
+/* line 251, ../sass/print.scss */
+.TB {
+  width: 100px;
+  height: 100px;
+  background-color: #a6192e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 253, ../sass/print.scss */
+.TB .rightblock {
+  background-color: #6f6b66;
+}
+
+/* line 260, ../sass/print.scss */
+.NE {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 262, ../sass/print.scss */
+.NE .rightblock {
+  background-color: #c8102e;
+}
+
+/* line 269, ../sass/print.scss */
+.Mia {
+  width: 100px;
+  height: 100px;
+  background-color: #005f61;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 271, ../sass/print.scss */
+.Mia .rightblock {
+  background-color: #ff642a;
+}
+
+/* line 278, ../sass/print.scss */
+.Chi {
+  width: 100px;
+  height: 100px;
+  background-color: #081f2c;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 280, ../sass/print.scss */
+.Chi .rightblock {
+  background-color: #dc4405;
+}
+
+/* line 287, ../sass/print.scss */
+.Cle {
+  width: 100px;
+  height: 100px;
+  background-color: #fc4c02;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 289, ../sass/print.scss */
+.Cle .rightblock {
+  background-color: #413322;
+}
+
+/* line 296, ../sass/print.scss */
+.Buf {
+  width: 100px;
+  height: 100px;
+  background-color: #003087;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 298, ../sass/print.scss */
+.Buf .rightblock {
+  background-color: #c8102e;
+}
+
+/* line 305, ../sass/print.scss */
+.Jac {
+  width: 100px;
+  height: 100px;
+  background-color: #006272;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 307, ../sass/print.scss */
+.Jac .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 314, ../sass/print.scss */
+.Phi {
+  width: 100px;
+  height: 100px;
+  background-color: #004851;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 316, ../sass/print.scss */
+.Phi .rightblock {
+  background-color: #54585a;
+}
+
+/* line 323, ../sass/print.scss */
+.Min {
+  width: 100px;
+  height: 100px;
+  background-color: #330072;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 325, ../sass/print.scss */
+.Min .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 332, ../sass/print.scss */
+.Was {
+  width: 100px;
+  height: 100px;
+  background-color: #782f40;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 334, ../sass/print.scss */
+.Was .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 341, ../sass/print.scss */
+.Atl {
+  width: 100px;
+  height: 100px;
+  background-color: #a6192e;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 343, ../sass/print.scss */
+.Atl .rightblock {
+  background-color: #1e1e1e;
+}
+
+/* line 350, ../sass/print.scss */
+.Sea {
+  width: 100px;
+  height: 100px;
+  background-color: #213d5a;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 352, ../sass/print.scss */
+.Sea .rightblock {
+  background-color: #43b02a;
+}
+
+/* line 359, ../sass/print.scss */
+.NYG {
+  width: 100px;
+  height: 100px;
+  background-color: #001e62;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 361, ../sass/print.scss */
+.NYG .rightblock {
+  background-color: #a6192e;
+}
+
+/* line 368, ../sass/print.scss */
+.SD {
+  width: 100px;
+  height: 100px;
+  background-color: #0072ce;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 370, ../sass/print.scss */
+.SD .rightblock {
+  background-color: #ffb81c;
+}
+
+/* line 377, ../sass/print.scss */
+.Den {
+  width: 100px;
+  height: 100px;
+  background-color: #0c2340;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  color: white;
+  float: left;
+  transition: 2s;
+  -webkit-transition: 2s;
+  opacity: 1;
+}
+/* line 379, ../sass/print.scss */
+.Den .rightblock {
+  background-color: #fc4c02;
+}
+
+/* line 386, ../sass/print.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 390, ../sass/print.scss */
+.kingkong {
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+/* line 395, ../sass/print.scss */
+.sidebar {
+  float: left;
+  background-color: #f0f0f0;
+  color: black;
+  padding: 16px 0 16px 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 403, ../sass/print.scss */
+.resultsBox {
+  float: left;
+  margin-left: 20px;
+  color: white;
+  max-width: 470px;
+}
+
+/* line 410, ../sass/print.scss */
+.teambox {
+  float: left;
+  margin-right: 30px;
+  padding: 8px;
+  width: 200px;
+  min-height: 230px;
+  max-height: 230px;
+}
+
+/* line 419, ../sass/print.scss */
+.leftblock {
+  margin-left: 10px;
+  max-width: 255px;
+  float: left;
+}
+
+/* line 425, ../sass/print.scss */
+.rightblock {
+  margin-left: 40px;
+  min-height: 355px;
+  width: 40px;
+  float: left;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 433, ../sass/print.scss */
+.city {
+  font-weight: bold;
+  font-size: 110%;
+}
+
+/* line 437, ../sass/print.scss */
+.name {
+  font-weight: bold;
+  font-size: 110%;
+  margin-bottom: 4px;
+}
+
+/* line 442, ../sass/print.scss */
+.record {
+  margin-bottom: 16px;
+}
+
+/* line 446, ../sass/print.scss */
+.score {
+  font-size: 300%;
+  font-weight: bold;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+/* line 453, ../sass/print.scss */
+.stub {
+  float: left;
+  padding: 2px 4px 2px 4px;
+  vertical-align: middle;
+  min-width: 130px;
+  font-size: 85%;
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-left: 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 465, ../sass/print.scss */
+.stub:hover {
+  background-color: #bebebe;
+  color: lavender;
+  cursor: pointer;
+}
+
+/* line 471, ../sass/print.scss */
+.gameList {
+  margin-bottom: 20px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+/* line 479, ../sass/print.scss */
+.statsbox {
+  float: left;
+  background-color: white;
+  min-width: 200px;
+}
+
+/* line 485, ../sass/print.scss */
+.leftblock .nav .active .navlink {
+  color: black;
+}
+
+/* line 489, ../sass/print.scss */
+.navlink:hover {
+  cursor: pointer;
+}
+
+/* line 493, ../sass/print.scss */
+.statstype {
+  float: left;
+  font-size: 90%;
+  color: black;
+}
+
+/* line 497, ../sass/print.scss */
+.statsdata {
+  float: right;
+  font-size: 90%;
+  color: black;
+  margin-bottom: 8px;
+}
+
+/* line 502, ../sass/print.scss */
+.statsOff {
+  margin: 8px;
+}
+
+/* line 506, ../sass/print.scss */
+.statsDef {
+  margin: 8px;
+}
+
+/* line 510, ../sass/print.scss */
+#myTab {
+  margin-bottom: 0;
+}
+
+/* line 514, ../sass/print.scss */
+.leftblock .nav .navlink {
+  font-size: 90%;
+  font-weight: bold;
+  color: white;
+}
+
+/* line 520, ../sass/print.scss */
+.footer {
+  background-color: #c8c8e6;
+  padding: 10px 20px 10px 20px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  float: left;
+  margin-top: 40px;
+  text-align: center;
+}
+/* line 528, ../sass/print.scss */
+.footer a {
+  float: left;
+  vertical-align: middle;
+  line-height: 30px;
+}
+/* line 533, ../sass/print.scss */
+.footer a img {
+  height: 30px;
+  margin-left: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  float: left;
+}
+/* line 541, ../sass/print.scss */
+.footer div {
+  color: black;
+  margin-right: 15px;
+  margin-left: 15px;
+  float: left;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+/* line 553, ../sass/print.scss */
+.fadeOut {
+  opacity: 0;
+}
