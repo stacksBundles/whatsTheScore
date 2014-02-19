@@ -835,14 +835,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     background-color: #bebebe;
     color: white;
   }
+  /* line 576, ../sass/screen.scss */
+  .weekColumn .picked {
+    background-color: #bebebe;
+    color: white;
+  }
 
-  /* line 579, ../sass/screen.scss */
+  /* line 584, ../sass/screen.scss */
   .leftblock {
     margin-left: 10px;
-    min-width: 271px;
+    min-width: 273px;
     float: left;
   }
-  /* line 584, ../sass/screen.scss */
+  /* line 589, ../sass/screen.scss */
   .leftblock .statsbox {
     float: left;
     background-color: white;
@@ -852,17 +857,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-right: 8px;
   }
 
-  /* line 595, ../sass/screen.scss */
+  /* line 600, ../sass/screen.scss */
   .kingkong {
     margin-left: 40px;
     margin-bottom: 40px;
   }
-  /* line 599, ../sass/screen.scss */
+  /* line 604, ../sass/screen.scss */
   .kingkong img {
     width: 200px;
   }
 
-  /* line 606, ../sass/screen.scss */
+  /* line 611, ../sass/screen.scss */
   .score {
     font-size: 300%;
     font-weight: bold;
@@ -871,42 +876,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     float: left;
   }
 }
-/* line 615, ../sass/screen.scss */
+/* line 620, ../sass/screen.scss */
 .city {
   font-weight: bold;
   font-size: 110%;
 }
 
-/* line 619, ../sass/screen.scss */
+/* line 624, ../sass/screen.scss */
 .name {
   font-weight: bold;
   font-size: 110%;
   margin-bottom: 4px;
 }
 
-/* line 624, ../sass/screen.scss */
+/* line 629, ../sass/screen.scss */
 .record {
   margin-bottom: 16px;
 }
 
-/* line 630, ../sass/screen.scss */
+/* line 635, ../sass/screen.scss */
 .leftblock .nav .active .navlink {
   color: black;
 }
 
-/* line 634, ../sass/screen.scss */
+/* line 639, ../sass/screen.scss */
 .navlink:hover {
   cursor: pointer;
 }
 
-/* line 638, ../sass/screen.scss */
+/* line 643, ../sass/screen.scss */
 .statstype {
   float: left;
   font-size: 90%;
   color: black;
 }
 
-/* line 642, ../sass/screen.scss */
+/* line 647, ../sass/screen.scss */
 .statsdata {
   float: right;
   font-size: 90%;
@@ -914,31 +919,31 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   margin-bottom: 8px;
 }
 
-/* line 647, ../sass/screen.scss */
+/* line 652, ../sass/screen.scss */
 .statsOff {
   margin: 12px;
   width: 97%;
 }
 
-/* line 652, ../sass/screen.scss */
+/* line 657, ../sass/screen.scss */
 .statsDef {
   margin: 12px;
   width: 97%;
 }
 
-/* line 657, ../sass/screen.scss */
+/* line 662, ../sass/screen.scss */
 #myTab {
   margin-bottom: 0;
 }
 
-/* line 661, ../sass/screen.scss */
+/* line 666, ../sass/screen.scss */
 .leftblock .nav .navlink {
   font-size: 90%;
   font-weight: bold;
   color: #c8c8c8;
 }
 
-/* line 667, ../sass/screen.scss */
+/* line 672, ../sass/screen.scss */
 .footer {
   background-color: #646464;
   display: inline-block;
@@ -946,14 +951,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-left: 190px;
   width: 100%;
 }
-/* line 676, ../sass/screen.scss */
+/* line 681, ../sass/screen.scss */
 .footer a {
   display: inline-block;
   vertical-align: middle;
   line-height: 30px;
   color: white;
 }
-/* line 681, ../sass/screen.scss */
+/* line 686, ../sass/screen.scss */
 .footer a img {
   height: 30px;
   margin-left: 10px;
@@ -961,7 +966,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -webkit-border-radius: 4px;
   display: inline-block;
 }
-/* line 689, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 .footer div {
   color: black;
   margin-right: 15px;
@@ -971,7 +976,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: 30px;
 }
 
-/* line 701, ../sass/screen.scss */
+/* line 706, ../sass/screen.scss */
 .fadeOut {
   opacity: 0;
 }

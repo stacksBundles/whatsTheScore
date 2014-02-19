@@ -8,6 +8,7 @@ services.factory('filterService', function($rootScope) {
 	filterService.set = function (week) {
 		filterService.value = week;
 		$rootScope.$broadcast('changeWeek');
+		$rootScope.$broadcast('clearButtons');
 	}
 
 	return filterService;

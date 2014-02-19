@@ -573,12 +573,17 @@ $Was2: #FFB81C;
 			color: rgb(255, 255, 255);
 		}
 
+		.picked {
+			background-color: rgb(190, 190, 190);
+			color: rgb(255, 255, 255);
+		}
+
 		
 	}
 
 	.leftblock {
 		margin-left: 10px;
-		min-width: 271px;
+		min-width: 273px;
 		float: left;
 
 		.statsbox {

@@ -50,7 +50,11 @@ directives.directive('weekpicker', function(filterService) {
 		link: function (scope, elem, attrs) {
 			scope.changeWeek = function(week) {
 				filterService.set(week);
+				elem.addClass('picked');
 			}
+			scope.$on('clearButtons', function() {
+				elem.removeClass('picked');
+			})
 		}
 	}
 })
