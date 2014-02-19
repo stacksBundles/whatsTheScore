@@ -5,6 +5,8 @@
 
 @import "compass/reset";
 
+$BG1: rgb(100, 100, 100);
+$HEADFOOT: rgb(255, 255, 255);
 
 // NFL team colours from http://boards.sportslogos.net/topic/82401-nfl-team-color-codes/
 $Ari: #9B2743;
@@ -12,7 +14,7 @@ $Ari2: #1E1E1E;
 $Atl: #A6192E;
 $Atl2: #1E1E1E;
 $Bal: #24135F;
-$Bal2: #FFFFFF;
+$Bal2: #D0B240;
 $Buf: #003087;
 $Buf2: #C8102E;
 $Car: #0085CA;
@@ -25,8 +27,8 @@ $Cle: #FC4C02;
 $Cle2: #413322;
 $Dal: #0C2340;
 $Dal2: #858078;
-$Den: #0C2340;
-$Den2: #FC4C02;
+$Den: #FC4C02;
+$Den2: #0C2340;
 $Det: #00558C;
 $Det2: #8A8D8F;
 $GB: #183028;
@@ -49,7 +51,7 @@ $NO: #85714D;
 $NO2: #1E1E1E;
 $NYG: #001E62;
 $NYG2: #A6192E;
-$NYJ: #183028;
+$NYJ: #0C371D;
 $NYJ2: #FFFFFF;
 $Oak: #7D858A;
 $Oak2: #1E1E1E;
@@ -392,23 +394,32 @@ $Was2: #FFB81C;
 	clear: both;
 }
 
+.contentWell {
+	float: left;
+	min-height: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.headLine {
+	background-color: $BG1;
+	padding: 40px 110px;
+	width: 100%;
+	font-size: 60px;
+	color: $HEADFOOT;
+}
+
 .kingkong {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 40px;
 	width: 200px;
-
-	img {
-		width: 200px;
-	}
-}
-
-.sidebar {
-	display: inline;
-	background-color: rgb(240, 240, 240);
-	color: rgb(0, 0, 0);
-	padding: 16px 0 16px 0;
-	@include rounded;
 }
 
 .resultsBox {
@@ -416,64 +427,169 @@ $Was2: #FFB81C;
 	margin-left: 80px;
 	color: rgb(255, 255, 255);
 	min-width: 300px;
+
+	img {
+		max-width: 200px;
+	}
 }
 
-.teambox {
-	float: left;
-	margin-right: 10px;
-	margin-top: 20px;
-	padding: 8px;
-	width: 220px;
-	min-height: 388px;
-	max-height: 388px;
-}
-
-.rightblock {
-	margin-top: 10px;
-	margin-left: 10px;
-	min-height: 20px;
-	width: 200px;
-	float: left;
-	@include rounded;
-}
 
 @media screen and (min-width: 1000px) {
 	.resultsBox {
 		float: left;
 		margin-left: 20px;
 		color: rgb(255, 255, 255);
-		min-width: 700px;
+		width: 100%;
+
+		img {
+			margin-top: 100px;
+			margin-left: 237px;
+			float: left;
+			max-width: 200px;
+			opacity: 0.3;
+		}
 	}
 
 	.teambox {
 		float: left;
-		margin-right: 30px;
-		padding: 8px;
-		width: 300px;
-		min-height: 358px;
-		max-height: 358px;
+		margin-right: 20px;
+		padding: 0;
+		width: 322px;
+		min-height: 452px;
+		max-height: 452px;
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		@include rounded;
+		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+		.colorBox {
+			width: 38px;
+			height: 452px;
+			float: right;
+			border-left: 1px solid rgb(200, 200, 200);
+
+			.rightblock {
+				height: 100%;
+				width: 10px;
+				float: right;
+			}
+
+			.box1 {
+				height: 100%;
+				width: 28px;
+				float: right;
+			}
+		}
 	}
 
 	.sidebar {
+		max-width: 201px;
+		height: 557px;
 		float: left;
 		background-color: rgb(240, 240, 240);
 		color: rgb(0, 0, 0);
-		padding: 16px 0 16px 0;
-		@include rounded;
+	}
+
+	.rightFrame {
+		width: 704px;
+		height: 557px;
+		float: left;
+		background-color: rgb(235, 235, 235);
+		color: rgb(0, 0, 0);
+		border-right: 1px solid rgb(200, 200, 200);
+
+		.topbar {
+			width: 704px;
+			float: left;
+			margin-bottom: 20px;
+			border-bottom: 1px solid rgb(200, 200, 200);
+			background-color: rgb(240, 240, 240);
+
+			.barHead {
+				float: left;
+				color: rgb(200, 200, 200);
+				font-weight: bold;
+				text-align: center;
+				padding: 10px 0;
+				min-width: 97px;
+			}
+
+			.stubDir {
+				float: left;
+			}
+
+			.stub {
+				float: left;
+				padding: 2px 4px 2px 4px;
+				vertical-align: middle;
+				font-size: 85%;
+				font-weight: bold;
+				min-width: 70px;
+				padding: 6px 9px;
+				text-align: center;
+			}
+
+			.stub:hover {
+				background-color: rgb(190, 190, 190);
+				color: rgb(255, 255, 255);
+				cursor: pointer;
+			}
+		}
+	}
+
+
+
+	.weekColumn {
+		max-width: 100px;
+		min-width: 100px;
+		float: left;
+		border-right: 1px solid rgb(200, 200, 200);
+		text-align: center;
+		background-color: inherit;
+
+		.columnHead {
+			float: left;
+			color: rgb(200, 200, 200);
+			font-weight: bold;
+			min-width: 97px;
+			padding: 22px 0;
+		}
+
+		.weekPicker {
+			max-width: 100px;
+			min-width: 100px;
+			display: inline-block;
+			padding: 4px 0;
+			border-top: 1px solid rgb(230, 230, 230);
+			text-align: center;
+			.weekIndex {
+				font-weight: bold;
+				display: inline-block;
+			}
+		}
+
+		.weekPicker:hover {
+			background-color: rgb(190, 190, 190);
+			color: rgb(255, 255, 255);
+		}
+
+		
 	}
 
 	.leftblock {
 		margin-left: 10px;
-		max-width: 255px;
+		min-width: 271px;
 		float: left;
-	}
 
-	.rightblock {
-		margin-left: 40px;
-		min-height: 345px;
-		width: 40px;
-		float: left;
-		@include rounded;
+		.statsbox {
+			float: left;
+			background-color: rgb(255, 255, 255);
+			min-width: 242px;
+			min-height: 280px;
+			border-left: 1px solid rgb(221, 221, 221);
+			padding-right: 8px;
+		}
+
 	}
 
 	.kingkong {
@@ -484,12 +600,16 @@ $Was2: #FFB81C;
 			width: 200px;
 		}
 	}
-}
 
-.leftblock {
-	margin-left: 10px;
-	max-width: 455px;
-	float: left;
+	
+
+	.score {
+		font-size: 300%;
+		font-weight: bold;
+		margin-bottom: 16px;
+		margin-top: 16px;
+		float: left;
+	}
 }
 
 .city {
@@ -505,44 +625,7 @@ $Was2: #FFB81C;
 	margin-bottom: 16px;
 }
 
-.score {
-	font-size: 300%;
-	font-weight: bold;
-	margin-bottom: 16px;
-	margin-top: 16px;
-}
 
-.stub {
-	float: left;
-	padding: 2px 4px 2px 4px;
-	vertical-align: middle;
-	min-width: 130px;
-	font-size: 85%;
-	font-weight: bold;
-	margin-bottom: 4px;
-	margin-left: 16px;
-	@include rounded;
-}
-
-.stub:hover {
-	background-color: rgb(190, 190, 190);
-	color: rgb(230, 230, 250);
-	cursor: pointer;
-}
-
-.gameList {
-	margin-bottom: 20px;
-	vertical-align: middle;
-	text-align: center;
-
-	@include rounded;
-}
-
-.statsbox {
-	float: left;
-	background-color: rgb(255, 255, 255);
-	min-width: 200px;
-}
 
 .leftblock .nav .active .navlink {
 	color: rgb(0, 0, 0);
@@ -562,11 +645,13 @@ $Was2: #FFB81C;
 }
 
 .statsOff {
-	margin: 8px;
+	margin: 12px;
+	width: 97%;
 }
 
 .statsDef {
-	margin: 8px;
+	margin: 12px;
+	width: 97%;
 }
 
 #myTab {
@@ -574,29 +659,30 @@ $Was2: #FFB81C;
 }
 
 .leftblock .nav .navlink {
-		font-size: 90%;
-		font-weight: bold;
-		color: rgb(255, 255, 255);
-	}
+	font-size: 90%;
+	font-weight: bold;
+	color: rgb(200, 200, 200);
+}
 
 .footer {
-	background-color: rgb(200, 200, 230);
-	padding: 10px 20px 10px 20px;
-	@include rounded;
-	float: left;
-	margin-top: 40px;
-	text-align: center;
+	background-color: $BG1;
+	display: inline-block;
+	// @include rounded;
+	// float: left;
+	padding: 30px 0;
+	padding-left: 190px;
+	width: 100%;
 
 	a {
-		float: left;
+		display: inline-block;
 		vertical-align: middle;
 		line-height: 30px;
-
+		color: $HEADFOOT;
 		img {
 			height: 30px;
 			margin-left: 10px;
 			@include rounded;
-			float: left;
+			display: inline-block;
 		}
 	}
 
@@ -604,7 +690,7 @@ $Was2: #FFB81C;
 		color: rgb(0, 0, 0);
 		margin-right: 15px;
 		margin-left: 15px;
-		float: left;
+		display: inline-block;
 		vertical-align: middle;
 		line-height: 30px;
 	}
@@ -615,3 +701,5 @@ $Was2: #FFB81C;
 .fadeOut {
 	opacity: 0;
 }
+
+

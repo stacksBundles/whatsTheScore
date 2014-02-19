@@ -13,11 +13,22 @@
 
 
  <body ng-app='ScaffoldsApp'>
+ 	<div class='headLine'>
+ 		WHATS THE SCORE
+ 	</div>
  	{% verbatim %}
- 	<div class='well'>
-	 	<div class='container' ng-view=''>
+ 	<div class='contentWell'>
+	 	<div ng-view=''>
 	 		
 		</div>
+		
+	</div>
+	<div class='footer'>
+		<a href='http://apps.washingtonpost.com/sports/'>Powered by WaPo Sports API</a>
+		<a href='http://apps.washingtonpost.com/sports/'>
+			<img src='{% static "images/Washington-Post-logo-6-2-12.jpg" %}' class='wapoLogo'></img>
+		</a>
+		<a href='https://github.com/stacksBundles/whatsTheScore'>View the source code</a>
 	</div>
 	{% endverbatim %}
 	

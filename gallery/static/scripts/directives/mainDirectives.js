@@ -2,7 +2,7 @@ var directives = angular.module('ScaffoldsApp.directives', []);
 
 // A stub directive is instantiated for each sidebar game. The linking function
 // calls the queryService with the appropriate game code
-directives.directive('stub', function(queryService) {
+directives.directive('stub', function(queryService, filterService) {
 	return {
 		restrict: 'E',
 		link: function(scope, elem, attrs) {
@@ -10,6 +10,7 @@ directives.directive('stub', function(queryService) {
 			scope.loadgame = function(code) {
 				queryService.getGame(code);
 			};
+
 		}
 	}
 })
@@ -39,6 +40,17 @@ directives.directive('teambox', function() {
 			scope.$on('show', function() {
 				elem.removeClass('fadeOut');
 			})
+		}
+	}
+})
+
+directives.directive('weekpicker', function(filterService) {
+	return {
+		restrict: 'E',
+		link: function (scope, elem, attrs) {
+			scope.changeWeek = function(week) {
+				filterService.set(week);
+			}
 		}
 	}
 })

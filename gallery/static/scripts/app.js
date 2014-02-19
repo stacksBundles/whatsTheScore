@@ -13,3 +13,22 @@ app.config(function ($routeProvider) {
         redirectTo: '/'
       });
   });
+
+app.filter('startFrom', function() {
+	return function (input, start) {
+    if (input) {
+      start = +start;
+      console.log(input[start])
+      return input[start];
+    }
+	}
+})
+
+app.filter('perc', function() {
+  return function (input) {
+    if (input) {
+      var per = input * 100;
+      return per.toFixed(0);
+    }
+  }
+})
