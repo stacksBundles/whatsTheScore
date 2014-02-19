@@ -5,7 +5,7 @@ whatsTheScore
 The app uses the <a href='http://apps.washingtonpost.com/sports/'>Washington Post Sports API</a> to fetch and display stats from the 2013-2014 NFL regular season games. Visit <a href='http://iainmingo.com/'>iainmingo.com</a> to see for yourself.
 
 <h4>How do I use the WaPo Sports API?</h4>
-Since there's very little documentation explaining how to interact with the WaPo Sports API I had to do a little fishing. To retrieve stats for a specific game, the request URL has to include the 'gamecode' of the game in question (&gamecode=XXXXXXXX). How these 'gamecodes' are generated is not evident to me, so I queried the API and extracted the gamecodes from the JSON-formatted response. Here's the Python script I used:
+Since there's very little documentation explaining how to interact with the WaPo Sports API I had to do a little fishing. To retrieve stats for a specific game, the request URL has to include the 'gamecode' of the game in question (&gamecode=XXXXXXXX). How these 'gamecodes' are generated is not evident to me, so I queried the API *en mass* for and extracted the gamecodes from the JSON-formatted response. Here's the Python script I used:
 
 ```python
 import json
