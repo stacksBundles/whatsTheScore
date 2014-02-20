@@ -2,10 +2,30 @@ whatsTheScore
 =============
 
 <h4>What does it do?</h4>
-The app uses the <a href='http://apps.washingtonpost.com/sports/'>Washington Post Sports API</a> to fetch and display stats from the week 15 NFL games. Visit <a href='http://iainmingo.com/'>iainmingo.com</a> to see for yourself.
+The app uses the <a href='http://apps.washingtonpost.com/sports/'>Washington Post Sports API</a> to fetch and display stats from the 2013-2014 NFL regular season games. Visit <a href='http://iainmingo.com/'>iainmingo.com</a> to see for yourself.
 
-<h4>Why only week 15 stats?</h4>
-Unfortunately the WaPo Sports API isn't very well documented (read: undocumented) and I haven't been able to decode the URIs, so the gamecodes are hardcoded.
+<h4>How do I use the WaPo Sports API?</h4>
+Since there's very little documentation explaining how to interact with the WaPo Sports API I had to do a little fishing. To retrieve stats for a specific game, the request URL has to include the 'gamecode' of the game in question (&gamecode=XXXXXXXX). How these 'gamecodes' are generated is not evident to me, so I queried the API *en masse* and extracted the gamecodes from the JSON-formatted responses. Here's the Python script I used:
+
+```python
+import json
+import urllib.request
+
+gameDCT = {}
+gameidx = 0
+
+for x in range(0, 31):
+    offset = 729 + 8*x
+    URL = 'http://apps.washingtonpost.com/sports/api/nfl/v2/games/?format=json&offset={}&limit=8'.format(offset)
+    jsonurl = urllib.request.urlopen(URL) 
+    data = json.loads(jsonurl.read().decode('utf-8'))
+    
+    for game in data['objects']:
+        gameDCT[gameidx] = {'CODE': game['game_code'], 'HOME': game['home_team']['alias'], 'AWAY': game['away_team']['alias']}
+        gameidx = gameidx + 1
+```
+
+The API appears to limit requests to 8 objects, so the calls were made in batches of 8. The response is decoded, dumped into a Python dictionary and then the necessary entries (gamecodes and team acronyms/abbreviations) are extracted into a new dictionary. This new dictionary was then copy-and-pasted into Angular.
 
 <h4>How does it work?</h4>
 The front-end is written using AngularJS and the back-end is written in Django. Django serves up static content while AngularJS does most of the heavy lifting. To circumvent HTTP Access Control, requests are made for data to be returned in JSONP format, which is then evaluated and fed into the scope by AngularJS. 
