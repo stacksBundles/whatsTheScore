@@ -291,6 +291,11 @@ controllers.controller('MainCtrl', function($scope, queryService, $http, filterS
 		{'HOME': 'Sea', 'AWAY': 'StL', 'CODE': '20131229026'},
 		{'HOME': 'Dal', 'AWAY': 'Phi', 'CODE': '20131229006'}]
 	];
+
+	$scope.$on('hide', function() {
+		$scope.display = false;
+		$scope.default = true;
+	})
 	
 	// listens for rootScope broadcast announcing data has been fetched
 	$scope.$on('fetched', function() {

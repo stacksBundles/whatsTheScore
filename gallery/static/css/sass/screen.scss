@@ -5,7 +5,8 @@
 
 @import "compass/reset";
 
-$BG1: rgb(100, 100, 100);
+$BG1: rgb(55, 137, 185);
+$BG2: rgb(140, 32, 30);
 $HEADFOOT: rgb(255, 255, 255);
 
 // NFL team colours from http://boards.sportslogos.net/topic/82401-nfl-team-color-codes/
@@ -670,7 +671,7 @@ $Was2: #FFB81C;
 }
 
 .footer {
-	background-color: $BG1;
+	background-color: $BG2;
 	display: inline-block;
 	// @include rounded;
 	// float: left;
@@ -704,7 +705,41 @@ $Was2: #FFB81C;
 
 
 .fadeOut {
-	opacity: 0;
+	display: none;
+}
+
+.flicker {
+	-webkit-animation: fade 0.5s;
+    -moz-animation: fade 0.5s;
+    -ms-animation: fade 0.5s;
+    -o-animation: fade 0.5s;
+    animation: fade 0.5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+}
+
+
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-moz-keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@-ms-keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 

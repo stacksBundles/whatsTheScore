@@ -38,7 +38,6 @@ services.factory('queryService', function($rootScope, $http) {
 		// if not in the cache then we fetch the data
 		else {
 			var builtURI = API_URI + code;
-
 			$rootScope.$broadcast('hide');
 
 			// using jsonp to circumvent HTTP Access Control rejections
@@ -47,23 +46,13 @@ services.factory('queryService', function($rootScope, $http) {
 			// functon needs to be defined on the window scope
 			window.callback = function(data) {
 				queryService.returned = data.objects[0];
-				console.log(data.objects[0]);
 				queryService.cached[code] = data.objects[0];
 				$rootScope.$broadcast('fetched');
 			}
 
 			$rootScope.$broadcast('show');
 		}
-
-		
-	}
-
-	queryService.reap = function() {
-		$http.jsonp('http://apps.washingtonpost.com/sports/api/nfl/v2/games/?format=jsonp');
-
-		window.callback = function(data) {
-			queryService.returned = data.objects[0];
-		}
+	
 	}
 
 	return queryService;

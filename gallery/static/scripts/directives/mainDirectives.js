@@ -58,3 +58,17 @@ directives.directive('weekpicker', function(filterService) {
 		}
 	}
 })
+
+directives.directive('logo', function() {
+	return {
+		restrict: 'E',
+		link: function(scope, elem, attrs) {
+			scope.$on('hide', function() {
+				elem.addClass('flicker');
+			});
+			scope.$on('fetched', function() {
+				elem.removeClass('flicker');
+			})
+		}
+	}
+})

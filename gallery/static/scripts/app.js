@@ -14,6 +14,18 @@ app.config(function ($routeProvider) {
       });
   });
 
+app.run(['$rootScope', function($rootScope) {
+
+  // triggers loading text when page is bootstrapped, see ng-show='loadingView' in passionfeed.html
+  $rootScope.$on('$routeChangeStart', function (e, curr, prev) {
+    $rootScope.routeChange = true;
+  });
+
+  $rootScope.$on('$routeChangeSuccess', function (e, curr, prev) {
+    $rootScope.loadingView = false;
+  });
+}])
+
 app.filter('startFrom', function() {
 	return function (input, start) {
     if (input) {
