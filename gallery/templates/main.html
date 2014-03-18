@@ -11,7 +11,7 @@
 		</weekpicker>
 	</div>
 </div>
-<div class='rightFrame'>
+<div class='unit'>
 	<div class='topbar'>
 		<!-- <div class='barHead'>GAMES</div> -->
 		<stub class='stubDir' ng-repeat='game in week'>
@@ -22,168 +22,10 @@
 		<div class='clearfix'></div>
 	</div>
 	<div class='clearfix'></div>
-
-	<logo class='resultsBox' ng-show='default'>
-		{% endverbatim %}
-		<img src="{% static 'images/mainLogo.png'  %}"></img>
-		{% verbatim %}
-	</logo>
-	<div class='resultsBox' ng-show='display'>
-		<teambox isoloaded="loaded" class='teambox' >
-			<div class='leftblock'>
-				<div class='score'>{{ isoloaded.home_total_score }}</div>
-				<div class='clearfix'></div>
-				<div class='city'>{{ isoloaded.home_team.city }}</div>
-				<div class='name'>{{ isoloaded.home_team.name }}</div>
-				<div class='record'>{{ '(' + isoloaded.home_team.record + ')' }}</div>
-				<div class='clearfix'></div>
-				<ul class='nav nav-tabs' id='myTab'>
-					<li ng-class='{active: team.stats == "off" }'>
-						<a class='navlink' ng-click='team.switch("off")'>Off. stats</a>
-					</li>
-					<li ng-class='{active: team.stats == "def" }'>
-						<a class='navlink' ng-click='team.switch("def")'>Def. stats</a>
-					</li>
-				</ul>
-				<div class='tab-content statsbox'>
-					<div class='tab-pane statsOff' ng-class='{active: team.stats == "off"}'>
-						<div class='statstype'>Net yards:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.total_net_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Rushing yards:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.home_team_stats.rushing_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Passing yards:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.home_team_stats.passing_net_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Rush/pass ratio:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.rushing_attempts + '/' + isoloaded.home_team_stats.passing_attempts }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Time of possession:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.home_team_stats.possession_minutes  + ':' + isoloaded.home_team_stats.possession_seconds }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>3rd down conversion:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.third_down_made + '/' + isoloaded.home_team_stats.third_down_attempts }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Red zone conversion:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.red_zone_made + '/' + isoloaded.home_team_stats.red_zone_attempts }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Pass comp. ratio:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.passing_completions/isoloaded.home_team_stats.passing_attempts | perc }}%</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Turnovers:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.turnovers }}</div>
-						<div class='clearfix'></div>
-					</div>
-					<div class='tab-pane statsDef' ng-class='{active: team.stats == "def"}'>
-						<div class='statstype'>Interceptions:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.home_team_stats.interceptions }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Sacks:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.home_team_stats.defense_sacks }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Forced fumbles:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.home_team_stats.defense_forced_fumbles }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Sack yards:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.defense_sack_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Passes defended:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.defense_passes_defensed }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Tackles:</div>
-						<div class='statsdata'>{{ isoloaded.home_team_stats.defense_tackles }}</div>
-						<div class='clearfix'></div>
-					</div>
-				</div>
-			</div>
-			<div class='colorBox' ng-class='isoloaded.home_team.alias'>
-				<div class='box1'>
-				</div>
-				<div class='rightblock'>
-				</div>
-			</div>
-		</teambox>
-		<teambox isoloaded="loaded" class='teambox' ng-class='isoloaded.away_team.alias'>
-			<div class='leftblock'>
-				<div class='score'>{{ isoloaded.away_total_score }}</div>
-				<div class='clearfix'></div>
-				<div class='city'>{{ isoloaded.away_team.city }}</div>
-				<div class='name'>{{ isoloaded.away_team.name }}</div>
-				<div class='record'>{{ '(' + isoloaded.away_team.record + ')' }}</div>
-				<div class='clearfix'></div>
-				<ul class='nav nav-tabs' id='myTab'>
-					<li ng-class='{active: team.stats == "off" }'>
-						<a class='navlink' ng-click='team.switch("off")'>Off. stats</a>
-					</li>
-					<li ng-class='{active: team.stats == "def" }'>
-						<a class='navlink' ng-click='team.switch("def")'>Def. stats</a>
-					</li>
-				</ul>
-				<div class='tab-content statsbox'>
-					<div class='tab-pane statsOff' ng-class='{active: team.stats == "off"}'>
-						<div class='statstype'>Net yards:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.total_net_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Rushing yards:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.away_team_stats.rushing_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Passing yards:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.away_team_stats.passing_net_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Rush/pass ratio:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.rushing_attempts + '/' + isoloaded.away_team_stats.passing_attempts }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Time of possession:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.away_team_stats.possession_minutes  + ':' + isoloaded.away_team_stats.possession_seconds }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>3rd down conversion:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.third_down_made + '/' + isoloaded.away_team_stats.third_down_attempts }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Red zone conversion:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.red_zone_made + '/' + isoloaded.away_team_stats.red_zone_attempts }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Pass comp. ratio:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.passing_completions/isoloaded.away_team_stats.passing_attempts | perc }}%</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Turnovers:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.turnovers }}</div>
-						<div class='clearfix'></div>
-					</div>
-					<div class='tab-pane statsDef' ng-class='{active: team.stats == "def"}'>
-						<div class='statstype'>Interceptions:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.away_team_stats.interceptions }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Sacks:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.away_team_stats.defense_sacks }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Forced fumbles:</div>
-						<div class='statsdata'>{{ ' ' + isoloaded.away_team_stats.defense_forced_fumbles }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Sack yards:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.defense_sack_yards }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Passes defended:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.defense_passes_defensed }}</div>
-						<div class='clearfix'></div>
-						<div class='statstype'>Tackles:</div>
-						<div class='statsdata'>{{ isoloaded.away_team_stats.defense_tackles }}</div>
-						<div class='clearfix'></div>
-					</div>
-				</div>
-			</div>
-			<div class='colorBox' ng-class='isoloaded.away_team.alias'>
-				<div class='box1'>
-				</div>
-				<div class='rightblock'>
-				</div>
-			</div>
-		</teambox>
-		{% endverbatim %}
-		<div class='clearfix'></div>
-	</div>
+	<teambox passed='game' ng-repeat='game in loaded' class='rightFrame'>
+	</teambox>
 </div>
-
-
-
-
+<div class='clearfix'></div>
+<timeline class='visualBox'></timeline>
+<!--<barchart class='visualBox'></barchart>-->
+{% endverbatim %}

@@ -17,3 +17,8 @@ def feedTemplateRequest(request):
 
     return response
 
+def mobileTemplateRequest(request):
+
+    response = TemplateResponse(request, 'mobile.html', {})
+
+    return response

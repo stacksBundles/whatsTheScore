@@ -8,6 +8,7 @@ urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'gallery.views.index', name='home'),
     url(r'^views/main.html/$', 'gallery.views.feedTemplateRequest'),
+    url(r'^views/mobile.html/$', 'gallery.views.mobileTemplateRequest'),
     
                        
     # url(r'^iainmingo/', include('iainmingo.foo.urls')),

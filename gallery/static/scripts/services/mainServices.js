@@ -17,42 +17,32 @@ services.factory('filterService', function($rootScope) {
 
 // queryService factory builds the URI and makes the GET call. Returned data is
 // loaded using the callback() function and then a rootScope broadcast is made
-services.factory('queryService', function($rootScope, $http) {
+services.factory('queryService', function($rootScope, $http, $cacheFactory) {
 
 	var API_URI = 'http://apps.washingtonpost.com/sports/api/nfl/v2/games/?format=jsonp&game_code=';
 
+	var lruCache = $cacheFactory('lruCache', { capacity: 16 });
+
 	var queryService = {
-		returned: {},
-		cached: {}
-	};
 
-	queryService.getGame = function(code) {
-
-		// first check the cache
-		if (queryService.cached[code] != null) {
+		getGame: function (code) {
+			var builtURI = API_URI + code + '&callback=JSON_CALLBACK';
 			$rootScope.$broadcast('hide');
-			queryService.returned = queryService.cached[code];
-			$rootScope.$broadcast('fetched');
-			$rootScope.$broadcast('show');
-		}
-		// if not in the cache then we fetch the data
-		else {
-			var builtURI = API_URI + code;
+			var promise = $http.jsonp(builtURI, {cache: lruCache})
+			return promise;
+		},
+
+		onload: function() {
+			var builtURI = API_URI + 20130905007 + '&callback=JSON_CALLBACK';
 			$rootScope.$broadcast('hide');
-
-			// using jsonp to circumvent HTTP Access Control rejections
-			$http.jsonp(builtURI);
-		
-			// functon needs to be defined on the window scope
-			window.callback = function(data) {
-				queryService.returned = data.objects[0];
-				queryService.cached[code] = data.objects[0];
-				$rootScope.$broadcast('fetched');
-			}
-
-			$rootScope.$broadcast('show');
+			var promise = $http.jsonp(builtURI, { cache: lruCache })
+			.success( function (response) {
+				$rootScope.$broadcast('ready');
+				return response
+			});
+			return promise;
 		}
-	
+
 	}
 
 	return queryService;

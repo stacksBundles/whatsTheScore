@@ -577,18 +577,18 @@
   background-color: #fc4c02;
 }
 
-/* line 386, ../sass/print.scss */
+/* line 390, ../sass/print.scss */
 .clearfix {
   clear: both;
 }
 
-/* line 390, ../sass/print.scss */
+/* line 394, ../sass/print.scss */
 .kingkong {
   margin-left: 40px;
   margin-bottom: 40px;
 }
 
-/* line 395, ../sass/print.scss */
+/* line 399, ../sass/print.scss */
 .sidebar {
   float: left;
   background-color: #f0f0f0;
@@ -598,7 +598,7 @@
   -webkit-border-radius: 4px;
 }
 
-/* line 403, ../sass/print.scss */
+/* line 407, ../sass/print.scss */
 .resultsBox {
   float: left;
   margin-left: 20px;
@@ -606,7 +606,7 @@
   max-width: 470px;
 }
 
-/* line 410, ../sass/print.scss */
+/* line 414, ../sass/print.scss */
 .teambox {
   float: left;
   margin-right: 30px;
@@ -616,14 +616,14 @@
   max-height: 230px;
 }
 
-/* line 419, ../sass/print.scss */
+/* line 423, ../sass/print.scss */
 .leftblock {
   margin-left: 10px;
   max-width: 255px;
   float: left;
 }
 
-/* line 425, ../sass/print.scss */
+/* line 429, ../sass/print.scss */
 .rightblock {
   margin-left: 40px;
   min-height: 355px;
@@ -633,25 +633,25 @@
   -webkit-border-radius: 4px;
 }
 
-/* line 433, ../sass/print.scss */
+/* line 437, ../sass/print.scss */
 .city {
   font-weight: bold;
   font-size: 110%;
 }
 
-/* line 437, ../sass/print.scss */
+/* line 441, ../sass/print.scss */
 .name {
   font-weight: bold;
   font-size: 110%;
   margin-bottom: 4px;
 }
 
-/* line 442, ../sass/print.scss */
+/* line 446, ../sass/print.scss */
 .record {
   margin-bottom: 16px;
 }
 
-/* line 446, ../sass/print.scss */
+/* line 450, ../sass/print.scss */
 .score {
   font-size: 300%;
   font-weight: bold;
@@ -659,7 +659,7 @@
   margin-top: 16px;
 }
 
-/* line 453, ../sass/print.scss */
+/* line 457, ../sass/print.scss */
 .stub {
   float: left;
   padding: 2px 4px 2px 4px;
@@ -673,14 +673,14 @@
   -webkit-border-radius: 4px;
 }
 
-/* line 465, ../sass/print.scss */
+/* line 469, ../sass/print.scss */
 .stub:hover {
   background-color: #bebebe;
   color: lavender;
   cursor: pointer;
 }
 
-/* line 471, ../sass/print.scss */
+/* line 475, ../sass/print.scss */
 .gameList {
   margin-bottom: 20px;
   vertical-align: middle;
@@ -689,31 +689,31 @@
   -webkit-border-radius: 4px;
 }
 
-/* line 479, ../sass/print.scss */
+/* line 483, ../sass/print.scss */
 .statsbox {
   float: left;
   background-color: white;
   min-width: 200px;
 }
 
-/* line 485, ../sass/print.scss */
+/* line 489, ../sass/print.scss */
 .leftblock .nav .active .navlink {
   color: black;
 }
 
-/* line 489, ../sass/print.scss */
+/* line 493, ../sass/print.scss */
 .navlink:hover {
   cursor: pointer;
 }
 
-/* line 493, ../sass/print.scss */
+/* line 497, ../sass/print.scss */
 .statstype {
   float: left;
   font-size: 90%;
   color: black;
 }
 
-/* line 497, ../sass/print.scss */
+/* line 501, ../sass/print.scss */
 .statsdata {
   float: right;
   font-size: 90%;
@@ -721,29 +721,29 @@
   margin-bottom: 8px;
 }
 
-/* line 502, ../sass/print.scss */
+/* line 506, ../sass/print.scss */
 .statsOff {
   margin: 8px;
 }
 
-/* line 506, ../sass/print.scss */
+/* line 510, ../sass/print.scss */
 .statsDef {
   margin: 8px;
 }
 
-/* line 510, ../sass/print.scss */
+/* line 514, ../sass/print.scss */
 #myTab {
   margin-bottom: 0;
 }
 
-/* line 514, ../sass/print.scss */
+/* line 518, ../sass/print.scss */
 .leftblock .nav .navlink {
   font-size: 90%;
   font-weight: bold;
   color: white;
 }
 
-/* line 520, ../sass/print.scss */
+/* line 524, ../sass/print.scss */
 .footer {
   background-color: #c8c8e6;
   padding: 10px 20px 10px 20px;
@@ -753,13 +753,13 @@
   margin-top: 40px;
   text-align: center;
 }
-/* line 528, ../sass/print.scss */
+/* line 532, ../sass/print.scss */
 .footer a {
   float: left;
   vertical-align: middle;
   line-height: 30px;
 }
-/* line 533, ../sass/print.scss */
+/* line 537, ../sass/print.scss */
 .footer a img {
   height: 30px;
   margin-left: 10px;
@@ -767,7 +767,7 @@
   -webkit-border-radius: 4px;
   float: left;
 }
-/* line 541, ../sass/print.scss */
+/* line 545, ../sass/print.scss */
 .footer div {
   color: black;
   margin-right: 15px;
@@ -777,7 +777,7 @@
   line-height: 30px;
 }
 
-/* line 553, ../sass/print.scss */
+/* line 557, ../sass/print.scss */
 .fadeOut {
   opacity: 0;
 }

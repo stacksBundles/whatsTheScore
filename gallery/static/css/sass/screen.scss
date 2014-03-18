@@ -75,12 +75,18 @@ $Ten2: #0C2340;
 $Was: #782F40;
 $Was2: #FFB81C;
 
+body .contentWell .rightFrame .highlight {
+	color: rgb(255, 0, 0);
+	font-weight: bold;
+	font-size: 200%;
+}
+
 @mixin team($teamColor1) {
 	width: 100px;
 	height: 100px;
 	background-color: $teamColor1;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
+	// border-radius: 4px;
+	// -webkit-border-radius: 4px;
 	color: rgb(255, 255, 255);
 	float: left;
 	transition: 2s;
@@ -392,6 +398,7 @@ $Was2: #FFB81C;
 }
 
 .clearfix {
+	max-width: 200px;
 	clear: both;
 }
 
@@ -406,6 +413,8 @@ $Was2: #FFB81C;
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	min-width: 805px;
+	max-width: 805px;
 }
 
 .headLine {
@@ -451,36 +460,10 @@ $Was2: #FFB81C;
 		}
 	}
 
-	.teambox {
+	.unit {
 		float: left;
-		margin-right: 20px;
-		padding: 0;
-		width: 322px;
-		min-height: 452px;
-		max-height: 452px;
-		background-color: rgb(255, 255, 255);
-		color: rgb(0, 0, 0);
-		@include rounded;
-		box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-
-		.colorBox {
-			width: 38px;
-			height: 452px;
-			float: right;
-			border-left: 1px solid rgb(200, 200, 200);
-
-			.rightblock {
-				height: 100%;
-				width: 10px;
-				float: right;
-			}
-
-			.box1 {
-				height: 100%;
-				width: 28px;
-				float: right;
-			}
-		}
+		display: inline-block;
+		vertical-align: top;
 	}
 
 	.sidebar {
@@ -489,53 +472,106 @@ $Was2: #FFB81C;
 		float: left;
 		background-color: rgb(240, 240, 240);
 		color: rgb(0, 0, 0);
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.topbar {
+		width: 704px;
+		float: left;
+		margin-bottom: 0px;
+		border-bottom: 1px solid rgb(200, 200, 200);
+		background-color: rgb(240, 240, 240);
+
+		.barHead {
+			float: left;
+			color: rgb(200, 200, 200);
+			font-weight: bold;
+			text-align: center;
+			padding: 10px 0;
+			min-width: 97px;
+		}
+
+		.stubDir {
+			float: left;
+		}
+
+		.stub {
+			float: left;
+			padding: 2px 4px 2px 4px;
+			vertical-align: middle;
+			font-size: 85%;
+			font-weight: bold;
+			min-width: 70px;
+			padding: 6px 9px;
+			text-align: center;
+		}
+
+		.stub:hover {
+			background-color: rgb(190, 190, 190);
+			color: rgb(255, 255, 255);
+			cursor: pointer;
+		}
 	}
 
 	.rightFrame {
-		width: 704px;
-		height: 557px;
 		float: left;
+		width: 351px;
+		max-width: 351px;
+		max-height: 482px;
 		background-color: rgb(235, 235, 235);
 		color: rgb(0, 0, 0);
 		border-right: 1px solid rgb(200, 200, 200);
 
-		.topbar {
-			width: 704px;
+		.leftblock {
+			margin-left: 10px;
+			min-width: 273px;
 			float: left;
-			margin-bottom: 20px;
-			border-bottom: 1px solid rgb(200, 200, 200);
-			background-color: rgb(240, 240, 240);
+			vertical-align: top;
+			max-height: 200px;
+		}
 
-			.barHead {
+		.teambox {
+			margin-right: 0px;
+			padding: 0;
+			width: 312px;
+			min-height: 352px;
+			max-height: 352px;
+			background-color: rgb(255, 255, 255);
+			color: rgb(0, 0, 0);
+			@include rounded;
+			box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+			vertical-align: top;
+
+			.statsbox {
 				float: left;
-				color: rgb(200, 200, 200);
-				font-weight: bold;
-				text-align: center;
-				padding: 10px 0;
-				min-width: 97px;
+				background-color: rgb(255, 255, 255);
+				min-width: 242px;
+				min-height: 280px;
+				border-left: 1px solid rgb(221, 221, 221);
+				padding-right: 8px;
 			}
 
-			.stubDir {
-				float: left;
-			}
+			.colorBox {
+				width: 38px;
+				height: 452px;
+				float: right;
+				border-left: 1px solid rgb(200, 200, 200);
 
-			.stub {
-				float: left;
-				padding: 2px 4px 2px 4px;
-				vertical-align: middle;
-				font-size: 85%;
-				font-weight: bold;
-				min-width: 70px;
-				padding: 6px 9px;
-				text-align: center;
-			}
+				.rightblock {
+					height: 100%;
+					width: 10px;
+					float: right;
+				}
 
-			.stub:hover {
-				background-color: rgb(190, 190, 190);
-				color: rgb(255, 255, 255);
-				cursor: pointer;
+				.box1 {
+					height: 100%;
+					width: 28px;
+					float: right;
+				}
 			}
 		}
+
 	}
 
 
@@ -582,22 +618,6 @@ $Was2: #FFB81C;
 		
 	}
 
-	.leftblock {
-		margin-left: 10px;
-		min-width: 273px;
-		float: left;
-
-		.statsbox {
-			float: left;
-			background-color: rgb(255, 255, 255);
-			min-width: 242px;
-			min-height: 280px;
-			border-left: 1px solid rgb(221, 221, 221);
-			padding-right: 8px;
-		}
-
-	}
-
 	.kingkong {
 		margin-left: 40px;
 		margin-bottom: 40px;
@@ -616,6 +636,13 @@ $Was2: #FFB81C;
 		margin-top: 16px;
 		float: left;
 	}
+}
+
+.visualBox {
+	float: left;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
 }
 
 .city {
@@ -704,6 +731,66 @@ $Was2: #FFB81C;
 }
 
 
+
+.upperBar {
+	padding-top: 4px;
+	padding-left: 8px;
+	margin-bottom: 12px;
+}
+
+.upperHead {
+	width: 98%;
+	font-weight: bold;
+	font-size: 20px;
+	float: left;
+	padding-bottom: 4px;
+	color: rgb(200, 200, 200);
+
+}
+
+.mobWeekPicker {
+	float: left;
+	width: 19%;
+	text-align: center;
+	border-left: 1px solid rgb(200, 200, 200);
+	border-top: 1px solid rgb(200, 200, 200);
+	border-bottom: 1px solid rgb(200, 200, 200);
+	border-right: 1px solid rgb(200, 200, 200);
+}
+
+.mobWeekIdx {
+	padding: 10px 0;
+	font-weight: bold;
+}
+
+.lowerBar {
+	padding-top: 4px;
+	padding-left: 8px;
+}
+
+.lowerHead {
+	width: 100%;
+	font-weight: bold;
+	font-size: 20px;
+	float: left;
+	color: rgb(200, 200, 200);
+
+}
+
+.mobStubDir {
+	width: 33%;
+	text-align: center;
+	float: left;
+	padding: 4px 0;
+}
+
+.backBar {
+	width: 96%;
+	padding: 8px;
+	font-weight: bold;
+	background-color: rgb(190, 190, 190);
+}
+
 .fadeOut {
 	display: none;
 }
@@ -742,4 +829,125 @@ $Was2: #FFB81C;
     to {opacity: 0;}
 }
 
+@media screen and (max-width: 480px) {
+
+	body {
+		max-height: 568px;
+		overflow:hidden;
+	}
+
+	.headLine {
+		background-color: $BG1;
+		padding: 20px 0;
+		text-align: center;
+		width: 100%;
+		font-size: 30px;
+		color: $HEADFOOT;
+	}
+
+	.contentWell {
+		float: left;
+		background-color: #f5f5f5;
+		border: 1px solid #e3e3e3;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+		-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+		min-width: 1200px;
+	}
+
+	.footer {
+		background-color: $BG2;
+		display: inline-block;
+		padding: 10px 0;
+		padding-left: 0px;
+		width: 100%;
+		margin-top : 0px;
+
+		a {
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 30px;
+			color: $HEADFOOT;
+			img {
+				height: 30px;
+				margin-left: 10px;
+				@include rounded;
+				display: inline-block;
+			}
+		}
+
+		div {
+			color: rgb(0, 0, 0);
+			margin-right: 15px;
+			margin-left: 15px;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 30px;
+		}
+
+	}
+
+	.lowerBox {
+		float: left;
+		padding: 0;
+		width: 100%;
+		min-height: 452px;
+		max-height: 452px;
+		background-color: rgb(255, 255, 255);
+		color: rgb(0, 0, 0);
+		box-shadow: 0px 0 0px rgba(0, 0, 0, 0.1);
+
+		.colorBox {
+			width: 9%;
+			min-height: 452px;
+			max-height: 452px;
+			float: right;
+			border-left: 1px solid rgb(200, 200, 200);
+
+			.rightblock {
+				min-height: 452px;
+				max-height: 452px;
+				width: 50%;
+				float: right;
+			}
+
+			.box1 {
+				min-height: 452px;
+				max-height: 452px;
+				width: 50%;
+				float: right;
+			}
+		}
+	}
+
+	.leftblock {
+		margin-left: 10px;
+		min-width: 87%;
+		min-height: 452px;
+		max-height: 452px;
+		float: left;
+
+		.statsbox {
+			float: left;
+			background-color: rgb(255, 255, 255);
+			min-width: 242px;
+			min-height: 280px;
+			border-left: 1px solid rgb(221, 221, 221);
+			padding-right: 8px;
+		}
+
+	}
+
+	.score {
+		font-size: 300%;
+		font-weight: bold;
+		margin-bottom: 16px;
+		margin-top: 16px;
+		float: left;
+	}
+
+}
 
