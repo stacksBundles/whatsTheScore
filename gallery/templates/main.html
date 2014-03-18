@@ -22,10 +22,17 @@
 		<div class='clearfix'></div>
 	</div>
 	<div class='clearfix'></div>
-	<teambox passed='game' ng-repeat='game in loaded' class='rightFrame'>
+	<teambox passed='game' ng-repeat='game in loaded' class='rightFrame' ng-show='state == 1'>
 	</teambox>
+	<timeline class='visualBox' ng-show='state == 2'></timeline>
+	<barchart class='visualBox' ng-show='state == 2'></barchart>
+	<div class='clearfix'></div>
+	<div class='cycleBox'>
+		<button ng-click='cycle()'>Show more stats&nbsp;&nbsp;<i class='fa fa-arrow-circle-right'></i>
+		</button>
+	</div>
 </div>
 <div class='clearfix'></div>
-<timeline class='visualBox'></timeline>
-<!--<barchart class='visualBox'></barchart>-->
+
+<!---->
 {% endverbatim %}

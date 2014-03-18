@@ -464,6 +464,23 @@ body .contentWell .rightFrame .highlight {
 		float: left;
 		display: inline-block;
 		vertical-align: top;
+
+		.cycleBox {
+			min-height: 44px;
+			height: 44px;
+			border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+
+			button {
+				min-height: 44px;
+				font-size: 20px;
+				height: 44px;
+				border: 0;
+				width: 704px;
+			}
+
+		}
+
 	}
 
 	.sidebar {
@@ -641,8 +658,9 @@ body .contentWell .rightFrame .highlight {
 .visualBox {
 	float: left;
 	display: inline-block;
-	width: 400px;
-	height: 400px;
+	width: 340px;
+	height: 448px;
+	margin-right: 12px;
 }
 
 .city {

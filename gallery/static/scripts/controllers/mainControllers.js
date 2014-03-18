@@ -51,6 +51,12 @@ controllers.controller('mainCtrl', function ($scope, queryService, $http, filter
 			$rootScope.$broadcast('ready');
 		})
 	}
+
+	$scope.state = 1;
+
+	$scope.cycle = function() {
+		$scope.state = ($scope.state == 3) ? 1 : ($scope.state + 1);
+	}
 	
 	$scope.$on('hide', function() {
 		$scope.display = false;
