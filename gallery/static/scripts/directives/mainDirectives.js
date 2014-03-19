@@ -85,7 +85,7 @@ directives.directive('barchart', function() {
 		},
 		link: function (scope, elem, attrs) {
 			scope.bar = {
-				wh: 105,
+				wh: 155,
 				ht: 230,
 				graph: {
 					height: 350,
@@ -160,9 +160,61 @@ directives.directive('timeline', function() {
 				};
 				scope.lineA.slice(0, -1);
 				scope.lineB.slice(0, -1);
-				console.log(scope.lineA);
-				console.log(scope.datasetA[0]);
 			})			
+		}
+	}
+})
+
+directives.directive('scoring', function() {
+	return {
+		restrict: 'EA',
+		replace: true,
+		templateUrl: 'scoring.html',
+		link: function(scope, elem, attrs) {
+			scope.run = 0;
+			scope.pass = 0;
+			scope.called = 0;
+			scope.unk = function(given) {
+				var ans = (100 * (Math.tan((Math.PI / 2) - Math.atan(252 / given))));
+				return ans
+			};
+			scope.player = function(given) { 
+				var ans = (50 * (Math.tan((Math.PI / 2) - Math.atan(252 / given))));
+				return ans
+			};
+			scope.loadPlay = function(ind) {
+				scope.giv = 0;
+				scope.called = 1.5;
+				if (scope.scores[ind].yards < 50) {
+					scope.giv = (50 - scope.scores[ind].yards) * 3.3;
+					scope.x1 = 350 + scope.giv;
+					scope.x2 = 350 + scope.giv - scope.unk(scope.giv);
+					scope.cx = 350 + (scope.giv - scope.player(scope.giv));
+				}
+				else {
+					scope.giv = (scope.scores[ind].yards - 50) * 3.3;
+					scope.x1 = 350 - scope.giv;
+					scope.x2 = 350 - (scope.giv - scope.unk(scope.giv));
+					scope.cx = 350 - (scope.giv - scope.player(scope.giv));
+				}
+				if (scope.scores[ind].play_type == 'Pass') {
+					scope.midpoint = ((528 - scope.cx));
+					scope.bezX1 = scope.cx + (scope.midpoint/4);
+					scope.bezX2 = 528 - (scope.midpoint/4);
+					scope.bezY1 = 100 - (scope.midpoint/4);
+					scope.run = 0;
+					scope.pass = 1.5;
+					scope.path = 'M ' + scope.cx + ' 150 C ' + scope.bezX1 + ' ' + scope.bezY1 + ' , ' + scope.bezX2 + ' ' + scope.bezY1 + ' , 528 150';
+				}
+				else if (scope.scores[ind].play_type == 'Rush') {
+					scope.run = 1.5;
+					scope.pass = 0;
+				}
+				else {
+					scope.run = 0;
+					scope.pass = 0;
+				}
+			};
 		}
 	}
 })

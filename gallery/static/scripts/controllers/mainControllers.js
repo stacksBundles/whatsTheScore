@@ -21,6 +21,7 @@ controllers.controller('mainCtrl', function ($scope, queryService, $http, filter
 
 	$scope.loaded = [loadone.data.objects[0].home_team_stats, loadone.data.objects[0].away_team_stats];
 	$scope.linescore = loadone.data.objects[0].line_score;
+	$scope.scores = loadone.data.objects[0].scoring_plays;
 
 	$scope.weekList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
 
@@ -45,9 +46,10 @@ controllers.controller('mainCtrl', function ($scope, queryService, $http, filter
 			response.objects[0].away_team_stats.score = response.objects[0].away_total_score;
 			$scope.loaded = [response.objects[0].home_team_stats, response.objects[0].away_team_stats];
 			$scope.linescore = response.objects[0].line_score;
+			$scope.scores = response.objects[0].scoring_plays;
 			$scope.display = true;
 			$scope.default = false;
-			console.log($scope.loaded);
+			console.log($scope.scores);
 			$rootScope.$broadcast('ready');
 		})
 	}

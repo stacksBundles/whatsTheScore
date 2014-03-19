@@ -466,6 +466,7 @@ body .contentWell .rightFrame .highlight {
 		vertical-align: top;
 
 		.cycleBox {
+			float: left;
 			min-height: 44px;
 			height: 44px;
 			border-top: 1px solid rgba(0, 0, 0, 0.3);
@@ -660,7 +661,45 @@ body .contentWell .rightFrame .highlight {
 	display: inline-block;
 	width: 340px;
 	height: 448px;
-	margin-right: 12px;
+	padding-right: 8px;
+	margin-right: 0px;
+	background-color: #1F021E;
+}
+
+.visualBox2 {
+	float: left;
+	width: 700px;
+	height: 448px;
+	margin-right: 0px;
+	background-color: #1F021E;
+}
+
+.scoringList {
+	padding: 8px;
+	float: left;
+	min-height: 184px;
+	max-height: 184px;
+	overflow: scroll;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(221, 221, 221);
+}
+
+.playBar {
+	float: left;
+	clear: both;
+	min-width: 300px;
+	padding: 6px;
+}
+
+.playBar:hover {
+	background-color: rgb(220, 220, 220);
+	color: rgb(40, 40, 40);
+	cursor: pointer;
+}
+
+.playDetail {
+	margin-right: 8px;
+	float: left;
 }
 
 .city {
