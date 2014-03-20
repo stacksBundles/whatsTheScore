@@ -700,18 +700,21 @@ body .contentWell .rightFrame .highlight {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   min-width: 805px;
   max-width: 805px;
+  font-family: 'Helvetica' Helvetica Sans-serif;
+  font-size: 14px;
 }
 
-/* line 532, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 .headLine {
   background-color: #3789b9;
-  padding: 40px 110px;
-  width: 100%;
+  padding: 40px 40px;
+  max-width: 725px;
+  min-width: 725px;
   font-size: 60px;
   color: white;
 }
 
-/* line 540, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 .kingkong {
   margin-left: auto;
   margin-right: auto;
@@ -719,27 +722,27 @@ body .contentWell .rightFrame .highlight {
   width: 200px;
 }
 
-/* line 547, ../sass/screen.scss */
+/* line 550, ../sass/screen.scss */
 .resultsBox {
   float: left;
   margin-left: 80px;
   color: white;
   min-width: 300px;
 }
-/* line 553, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
 .resultsBox img {
   max-width: 200px;
 }
 
 @media screen and (min-width: 1000px) {
-  /* line 560, ../sass/screen.scss */
+  /* line 563, ../sass/screen.scss */
   .resultsBox {
     float: left;
     margin-left: 20px;
     color: white;
     width: 100%;
   }
-  /* line 566, ../sass/screen.scss */
+  /* line 569, ../sass/screen.scss */
   .resultsBox img {
     margin-top: 100px;
     margin-left: 237px;
@@ -748,20 +751,20 @@ body .contentWell .rightFrame .highlight {
     opacity: 0.3;
   }
 
-  /* line 575, ../sass/screen.scss */
+  /* line 578, ../sass/screen.scss */
   .unit {
     float: left;
     display: inline-block;
     vertical-align: top;
   }
-  /* line 580, ../sass/screen.scss */
+  /* line 583, ../sass/screen.scss */
   .unit .cycleBox {
     float: left;
     min-height: 44px;
     height: 44px;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
   }
-  /* line 587, ../sass/screen.scss */
+  /* line 590, ../sass/screen.scss */
   .unit .cycleBox button {
     min-height: 44px;
     font-size: 20px;
@@ -770,7 +773,7 @@ body .contentWell .rightFrame .highlight {
     width: 704px;
   }
 
-  /* line 599, ../sass/screen.scss */
+  /* line 602, ../sass/screen.scss */
   .sidebar {
     max-width: 201px;
     height: 557px;
@@ -781,7 +784,7 @@ body .contentWell .rightFrame .highlight {
     vertical-align: top;
   }
 
-  /* line 609, ../sass/screen.scss */
+  /* line 612, ../sass/screen.scss */
   .topbar {
     width: 704px;
     float: left;
@@ -789,7 +792,7 @@ body .contentWell .rightFrame .highlight {
     border-bottom: 1px solid #c8c8c8;
     background-color: #f0f0f0;
   }
-  /* line 616, ../sass/screen.scss */
+  /* line 619, ../sass/screen.scss */
   .topbar .barHead {
     float: left;
     color: #c8c8c8;
@@ -798,11 +801,11 @@ body .contentWell .rightFrame .highlight {
     padding: 10px 0;
     min-width: 97px;
   }
-  /* line 625, ../sass/screen.scss */
+  /* line 628, ../sass/screen.scss */
   .topbar .stubDir {
     float: left;
   }
-  /* line 629, ../sass/screen.scss */
+  /* line 632, ../sass/screen.scss */
   .topbar .stub {
     float: left;
     padding: 2px 4px 2px 4px;
@@ -813,14 +816,14 @@ body .contentWell .rightFrame .highlight {
     padding: 6px 9px;
     text-align: center;
   }
-  /* line 640, ../sass/screen.scss */
+  /* line 643, ../sass/screen.scss */
   .topbar .stub:hover {
     background-color: #bebebe;
     color: white;
     cursor: pointer;
   }
 
-  /* line 647, ../sass/screen.scss */
+  /* line 650, ../sass/screen.scss */
   .rightFrame {
     float: left;
     width: 351px;
@@ -830,7 +833,7 @@ body .contentWell .rightFrame .highlight {
     color: black;
     border-right: 1px solid #c8c8c8;
   }
-  /* line 656, ../sass/screen.scss */
+  /* line 659, ../sass/screen.scss */
   .rightFrame .leftblock {
     margin-left: 10px;
     min-width: 273px;
@@ -838,7 +841,7 @@ body .contentWell .rightFrame .highlight {
     vertical-align: top;
     max-height: 200px;
   }
-  /* line 664, ../sass/screen.scss */
+  /* line 667, ../sass/screen.scss */
   .rightFrame .teambox {
     margin-right: 0px;
     padding: 0;
@@ -852,7 +855,7 @@ body .contentWell .rightFrame .highlight {
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
     vertical-align: top;
   }
-  /* line 676, ../sass/screen.scss */
+  /* line 679, ../sass/screen.scss */
   .rightFrame .teambox .statsbox {
     float: left;
     background-color: white;
@@ -861,27 +864,27 @@ body .contentWell .rightFrame .highlight {
     border-left: 1px solid #dddddd;
     padding-right: 8px;
   }
-  /* line 685, ../sass/screen.scss */
+  /* line 688, ../sass/screen.scss */
   .rightFrame .teambox .colorBox {
     width: 38px;
     height: 452px;
     float: right;
     border-left: 1px solid #c8c8c8;
   }
-  /* line 691, ../sass/screen.scss */
+  /* line 694, ../sass/screen.scss */
   .rightFrame .teambox .colorBox .rightblock {
     height: 100%;
     width: 10px;
     float: right;
   }
-  /* line 697, ../sass/screen.scss */
+  /* line 700, ../sass/screen.scss */
   .rightFrame .teambox .colorBox .box1 {
     height: 100%;
     width: 28px;
     float: right;
   }
 
-  /* line 709, ../sass/screen.scss */
+  /* line 712, ../sass/screen.scss */
   .weekColumn {
     max-width: 100px;
     min-width: 100px;
@@ -890,7 +893,7 @@ body .contentWell .rightFrame .highlight {
     text-align: center;
     background-color: inherit;
   }
-  /* line 717, ../sass/screen.scss */
+  /* line 720, ../sass/screen.scss */
   .weekColumn .columnHead {
     float: left;
     color: #c8c8c8;
@@ -898,7 +901,7 @@ body .contentWell .rightFrame .highlight {
     min-width: 97px;
     padding: 22px 0;
   }
-  /* line 725, ../sass/screen.scss */
+  /* line 728, ../sass/screen.scss */
   .weekColumn .weekPicker {
     max-width: 100px;
     min-width: 100px;
@@ -907,33 +910,33 @@ body .contentWell .rightFrame .highlight {
     border-top: 1px solid #e6e6e6;
     text-align: center;
   }
-  /* line 732, ../sass/screen.scss */
+  /* line 735, ../sass/screen.scss */
   .weekColumn .weekPicker .weekIndex {
     font-weight: bold;
     display: inline-block;
   }
-  /* line 738, ../sass/screen.scss */
+  /* line 741, ../sass/screen.scss */
   .weekColumn .weekPicker:hover {
     background-color: #bebebe;
     color: white;
   }
-  /* line 743, ../sass/screen.scss */
+  /* line 746, ../sass/screen.scss */
   .weekColumn .picked {
     background-color: #bebebe;
     color: white;
   }
 
-  /* line 751, ../sass/screen.scss */
+  /* line 754, ../sass/screen.scss */
   .kingkong {
     margin-left: 40px;
     margin-bottom: 40px;
   }
-  /* line 755, ../sass/screen.scss */
+  /* line 758, ../sass/screen.scss */
   .kingkong img {
     width: 200px;
   }
 
-  /* line 762, ../sass/screen.scss */
+  /* line 765, ../sass/screen.scss */
   .score {
     font-size: 300%;
     font-weight: bold;
@@ -942,7 +945,7 @@ body .contentWell .rightFrame .highlight {
     float: left;
   }
 }
-/* line 771, ../sass/screen.scss */
+/* line 774, ../sass/screen.scss */
 .visualBox {
   float: left;
   display: inline-block;
@@ -953,7 +956,7 @@ body .contentWell .rightFrame .highlight {
   background-color: #1F021E;
 }
 
-/* line 781, ../sass/screen.scss */
+/* line 784, ../sass/screen.scss */
 .visualBox2 {
   float: left;
   width: 700px;
@@ -962,7 +965,7 @@ body .contentWell .rightFrame .highlight {
   background-color: #1F021E;
 }
 
-/* line 789, ../sass/screen.scss */
+/* line 792, ../sass/screen.scss */
 .scoringList {
   padding: 8px;
   float: left;
@@ -973,7 +976,7 @@ body .contentWell .rightFrame .highlight {
   border: 1px solid #dddddd;
 }
 
-/* line 799, ../sass/screen.scss */
+/* line 802, ../sass/screen.scss */
 .playBar {
   float: left;
   clear: both;
@@ -981,55 +984,55 @@ body .contentWell .rightFrame .highlight {
   padding: 6px;
 }
 
-/* line 806, ../sass/screen.scss */
+/* line 809, ../sass/screen.scss */
 .playBar:hover {
   background-color: gainsboro;
   color: #282828;
   cursor: pointer;
 }
 
-/* line 812, ../sass/screen.scss */
+/* line 815, ../sass/screen.scss */
 .playDetail {
   margin-right: 8px;
   float: left;
 }
 
-/* line 817, ../sass/screen.scss */
+/* line 820, ../sass/screen.scss */
 .city {
   font-weight: bold;
   font-size: 110%;
 }
 
-/* line 821, ../sass/screen.scss */
+/* line 824, ../sass/screen.scss */
 .name {
   font-weight: bold;
   font-size: 110%;
   margin-bottom: 4px;
 }
 
-/* line 826, ../sass/screen.scss */
+/* line 829, ../sass/screen.scss */
 .record {
   margin-bottom: 16px;
 }
 
-/* line 832, ../sass/screen.scss */
+/* line 835, ../sass/screen.scss */
 .leftblock .nav .active .navlink {
   color: black;
 }
 
-/* line 836, ../sass/screen.scss */
+/* line 839, ../sass/screen.scss */
 .navlink:hover {
   cursor: pointer;
 }
 
-/* line 840, ../sass/screen.scss */
+/* line 843, ../sass/screen.scss */
 .statstype {
   float: left;
   font-size: 90%;
   color: black;
 }
 
-/* line 844, ../sass/screen.scss */
+/* line 847, ../sass/screen.scss */
 .statsdata {
   float: right;
   font-size: 90%;
@@ -1037,46 +1040,47 @@ body .contentWell .rightFrame .highlight {
   margin-bottom: 8px;
 }
 
-/* line 849, ../sass/screen.scss */
+/* line 852, ../sass/screen.scss */
 .statsOff {
   margin: 12px;
   width: 97%;
 }
 
-/* line 854, ../sass/screen.scss */
+/* line 857, ../sass/screen.scss */
 .statsDef {
   margin: 12px;
   width: 97%;
 }
 
-/* line 859, ../sass/screen.scss */
+/* line 862, ../sass/screen.scss */
 #myTab {
   margin-bottom: 0;
 }
 
-/* line 863, ../sass/screen.scss */
+/* line 866, ../sass/screen.scss */
 .leftblock .nav .navlink {
   font-size: 90%;
   font-weight: bold;
   color: #c8c8c8;
 }
 
-/* line 869, ../sass/screen.scss */
+/* line 872, ../sass/screen.scss */
 .footer {
   background-color: #8c201e;
   display: inline-block;
   padding: 30px 0;
-  padding-left: 190px;
-  width: 100%;
+  padding-left: 100px;
+  max-width: 705px;
+  min-width: 705px;
 }
-/* line 878, ../sass/screen.scss */
+/* line 882, ../sass/screen.scss */
 .footer a {
   display: inline-block;
   vertical-align: middle;
   line-height: 30px;
   color: white;
 }
-/* line 883, ../sass/screen.scss */
+/* line 887, ../sass/screen.scss */
 .footer a img {
   height: 30px;
   margin-left: 10px;
@@ -1084,7 +1088,7 @@ body .contentWell .rightFrame .highlight {
   -webkit-border-radius: 4px;
   display: inline-block;
 }
-/* line 891, ../sass/screen.scss */
+/* line 895, ../sass/screen.scss */
 .footer div {
   color: black;
   margin-right: 15px;
@@ -1094,14 +1098,14 @@ body .contentWell .rightFrame .highlight {
   line-height: 30px;
 }
 
-/* line 904, ../sass/screen.scss */
+/* line 908, ../sass/screen.scss */
 .upperBar {
   padding-top: 4px;
   padding-left: 8px;
   margin-bottom: 12px;
 }
 
-/* line 910, ../sass/screen.scss */
+/* line 914, ../sass/screen.scss */
 .upperHead {
   width: 98%;
   font-weight: bold;
@@ -1111,7 +1115,7 @@ body .contentWell .rightFrame .highlight {
   color: #c8c8c8;
 }
 
-/* line 920, ../sass/screen.scss */
+/* line 924, ../sass/screen.scss */
 .mobWeekPicker {
   float: left;
   width: 19%;
@@ -1122,19 +1126,19 @@ body .contentWell .rightFrame .highlight {
   border-right: 1px solid #c8c8c8;
 }
 
-/* line 930, ../sass/screen.scss */
+/* line 934, ../sass/screen.scss */
 .mobWeekIdx {
   padding: 10px 0;
   font-weight: bold;
 }
 
-/* line 935, ../sass/screen.scss */
+/* line 939, ../sass/screen.scss */
 .lowerBar {
   padding-top: 4px;
   padding-left: 8px;
 }
 
-/* line 940, ../sass/screen.scss */
+/* line 944, ../sass/screen.scss */
 .lowerHead {
   width: 100%;
   font-weight: bold;
@@ -1143,7 +1147,7 @@ body .contentWell .rightFrame .highlight {
   color: #c8c8c8;
 }
 
-/* line 949, ../sass/screen.scss */
+/* line 953, ../sass/screen.scss */
 .mobStubDir {
   width: 33%;
   text-align: center;
@@ -1151,7 +1155,7 @@ body .contentWell .rightFrame .highlight {
   padding: 4px 0;
 }
 
-/* line 956, ../sass/screen.scss */
+/* line 960, ../sass/screen.scss */
 .backBar {
   width: 96%;
   padding: 8px;
@@ -1159,12 +1163,12 @@ body .contentWell .rightFrame .highlight {
   background-color: #bebebe;
 }
 
-/* line 963, ../sass/screen.scss */
+/* line 967, ../sass/screen.scss */
 .fadeOut {
   display: none;
 }
 
-/* line 967, ../sass/screen.scss */
+/* line 971, ../sass/screen.scss */
 .flicker {
   -webkit-animation: fade 0.5s;
   -moz-animation: fade 0.5s;
@@ -1179,71 +1183,72 @@ body .contentWell .rightFrame .highlight {
 }
 
 @keyframes fade {
-  /* line 982, ../sass/screen.scss */
+  /* line 986, ../sass/screen.scss */
   from {
     opacity: 1;
   }
 
-  /* line 983, ../sass/screen.scss */
+  /* line 987, ../sass/screen.scss */
   to {
     opacity: 0;
   }
 }
 
 @-moz-keyframes fade {
-  /* line 987, ../sass/screen.scss */
+  /* line 991, ../sass/screen.scss */
   from {
     opacity: 1;
   }
 
-  /* line 988, ../sass/screen.scss */
+  /* line 992, ../sass/screen.scss */
   to {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes fade {
-  /* line 992, ../sass/screen.scss */
+  /* line 996, ../sass/screen.scss */
   from {
     opacity: 1;
   }
 
-  /* line 993, ../sass/screen.scss */
+  /* line 997, ../sass/screen.scss */
   to {
     opacity: 0;
   }
 }
 
 @-ms-keyframes fade {
-  /* line 997, ../sass/screen.scss */
+  /* line 1001, ../sass/screen.scss */
   from {
     opacity: 1;
   }
 
-  /* line 998, ../sass/screen.scss */
+  /* line 1002, ../sass/screen.scss */
   to {
     opacity: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  /* line 1003, ../sass/screen.scss */
+  /* line 1007, ../sass/screen.scss */
   body {
     max-height: 568px;
     overflow: hidden;
   }
 
-  /* line 1008, ../sass/screen.scss */
+  /* line 1012, ../sass/screen.scss */
   .headLine {
     background-color: #3789b9;
     padding: 20px 0;
     text-align: center;
-    width: 100%;
+    max-width: 805px;
+    min-width: 805px;
     font-size: 30px;
     color: white;
   }
 
-  /* line 1017, ../sass/screen.scss */
+  /* line 1022, ../sass/screen.scss */
   .contentWell {
     float: left;
     background-color: #f5f5f5;
@@ -1257,23 +1262,24 @@ body .contentWell .rightFrame .highlight {
     min-width: 1200px;
   }
 
-  /* line 1030, ../sass/screen.scss */
+  /* line 1035, ../sass/screen.scss */
   .footer {
     background-color: #8c201e;
     display: inline-block;
     padding: 10px 0;
     padding-left: 0px;
-    width: 100%;
+    max-width: 805px;
+    min-width: 805px;
     margin-top: 0px;
   }
-  /* line 1038, ../sass/screen.scss */
+  /* line 1044, ../sass/screen.scss */
   .footer a {
     display: inline-block;
     vertical-align: middle;
     line-height: 30px;
     color: white;
   }
-  /* line 1043, ../sass/screen.scss */
+  /* line 1049, ../sass/screen.scss */
   .footer a img {
     height: 30px;
     margin-left: 10px;
@@ -1281,7 +1287,7 @@ body .contentWell .rightFrame .highlight {
     -webkit-border-radius: 4px;
     display: inline-block;
   }
-  /* line 1051, ../sass/screen.scss */
+  /* line 1057, ../sass/screen.scss */
   .footer div {
     color: black;
     margin-right: 15px;
@@ -1291,7 +1297,7 @@ body .contentWell .rightFrame .highlight {
     line-height: 30px;
   }
 
-  /* line 1062, ../sass/screen.scss */
+  /* line 1068, ../sass/screen.scss */
   .lowerBox {
     float: left;
     padding: 0;
@@ -1302,7 +1308,7 @@ body .contentWell .rightFrame .highlight {
     color: black;
     box-shadow: 0px 0 0px rgba(0, 0, 0, 0.1);
   }
-  /* line 1072, ../sass/screen.scss */
+  /* line 1078, ../sass/screen.scss */
   .lowerBox .colorBox {
     width: 9%;
     min-height: 452px;
@@ -1310,14 +1316,14 @@ body .contentWell .rightFrame .highlight {
     float: right;
     border-left: 1px solid #c8c8c8;
   }
-  /* line 1079, ../sass/screen.scss */
+  /* line 1085, ../sass/screen.scss */
   .lowerBox .colorBox .rightblock {
     min-height: 452px;
     max-height: 452px;
     width: 50%;
     float: right;
   }
-  /* line 1086, ../sass/screen.scss */
+  /* line 1092, ../sass/screen.scss */
   .lowerBox .colorBox .box1 {
     min-height: 452px;
     max-height: 452px;
@@ -1325,7 +1331,7 @@ body .contentWell .rightFrame .highlight {
     float: right;
   }
 
-  /* line 1095, ../sass/screen.scss */
+  /* line 1101, ../sass/screen.scss */
   .leftblock {
     margin-left: 10px;
     min-width: 87%;
@@ -1333,7 +1339,7 @@ body .contentWell .rightFrame .highlight {
     max-height: 452px;
     float: left;
   }
-  /* line 1102, ../sass/screen.scss */
+  /* line 1108, ../sass/screen.scss */
   .leftblock .statsbox {
     float: left;
     background-color: white;
@@ -1343,7 +1349,7 @@ body .contentWell .rightFrame .highlight {
     padding-right: 8px;
   }
 
-  /* line 1113, ../sass/screen.scss */
+  /* line 1119, ../sass/screen.scss */
   .score {
     font-size: 300%;
     font-weight: bold;

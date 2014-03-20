@@ -104,6 +104,13 @@ controllers.controller('landingCtrl', function ($scope, $location) {
 	$scope.load = function(index) {
 		$scope.showing = index;
 	}
+
+	$scope.redirect = function(name) {
+		if (name == 'project1') {
+			$location.path('project1');
+			console.log(name);
+		}
+	}
 })
 
 // controllers.controller('mobileCtrl', function ($scope, $http, filterService, queryService, games) {

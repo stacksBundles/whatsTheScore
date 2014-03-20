@@ -527,12 +527,15 @@ body .contentWell .rightFrame .highlight {
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 	min-width: 805px;
 	max-width: 805px;
+	font-family: 'Helvetica' Helvetica Sans-serif;
+	font-size: 14px;
 }
 
 .headLine {
 	background-color: $BG1;
-	padding: 40px 110px;
-	width: 100%;
+	padding: 40px 40px;
+	max-width: 725px;
+	min-width: 725px;
 	font-size: 60px;
 	color: $HEADFOOT;
 }
@@ -872,8 +875,9 @@ body .contentWell .rightFrame .highlight {
 	// @include rounded;
 	// float: left;
 	padding: 30px 0;
-	padding-left: 190px;
-	width: 100%;
+	padding-left: 100px;
+	max-width: 705px;
+	min-width: 705px;
 
 	a {
 		display: inline-block;
@@ -1009,7 +1013,8 @@ body .contentWell .rightFrame .highlight {
 		background-color: $BG1;
 		padding: 20px 0;
 		text-align: center;
-		width: 100%;
+		max-width: 805px;
+		min-width: 805px;
 		font-size: 30px;
 		color: $HEADFOOT;
 	}
@@ -1032,7 +1037,8 @@ body .contentWell .rightFrame .highlight {
 		display: inline-block;
 		padding: 10px 0;
 		padding-left: 0px;
-		width: 100%;
+		max-width: 805px;
+		min-width: 805px;
 		margin-top : 0px;
 
 		a {
