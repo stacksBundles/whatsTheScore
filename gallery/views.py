@@ -22,3 +22,9 @@ def mobileTemplateRequest(request):
     response = TemplateResponse(request, 'mobile.html', {})
 
     return response
+
+def landingTemplateRequest(request):
+
+    response = TemplateResponse(request, 'landing.html', {})
+
+    return response

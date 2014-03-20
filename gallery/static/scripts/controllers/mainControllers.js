@@ -98,6 +98,14 @@ controllers.controller('mainCtrl', function ($scope, queryService, $http, filter
 
 })
 
+controllers.controller('landingCtrl', function ($scope, $location) {
+
+	$scope.showing = 0;
+	$scope.load = function(index) {
+		$scope.showing = index;
+	}
+})
+
 // controllers.controller('mobileCtrl', function ($scope, $http, filterService, queryService, games) {
 // 	$scope.display = false;
 // 	$scope.default = true;

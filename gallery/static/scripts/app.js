@@ -6,6 +6,10 @@ var app = angular.module('ScaffoldsApp', ['ScaffoldsApp.directives', 'ScaffoldsA
 app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        templateUrl: 'views/landing.html',
+        controller: 'landingCtrl',
+      })
+      .when('/project1', {
         templateUrl: 'views/' + mobilecheck() + '.html',
         controller: 'mainCtrl',
         resolve: {

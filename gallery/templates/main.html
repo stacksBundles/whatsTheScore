@@ -1,5 +1,9 @@
 {% load staticfiles %}
 {% verbatim %}
+<div class='contentWell'>
+<div class='headLine'>
+ 		WHATS THE SCORE
+ </div>
 <div class='sidebar'>
 	<div class='weekColumn'>
 		<div class='columnHead'>WEEK</div>
@@ -34,6 +38,13 @@
 	</div>
 </div>
 <div class='clearfix'></div>
-
+<div class='footer'>
+	<a href='http://apps.washingtonpost.com/sports/'>Powered by WaPo Sports API</a>
+	<a href='http://apps.washingtonpost.com/sports/'>
+		<img src='{% static "images/Washington-Post-logo-6-2-12.jpg" %}' class='wapoLogo'></img>
+	</a>
+	<a href='https://github.com/stacksBundles/whatsTheScore'>&nbsp;&nbsp;View the source code</a>
+</div>
+	</div>
 <!---->
 {% endverbatim %}
