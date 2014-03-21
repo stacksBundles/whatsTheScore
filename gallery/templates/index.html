@@ -40,7 +40,7 @@
 			<text
 				x='10'
 				y='20'
-				fill='#FFFFFF'
+				fill='#000000'
 				>Offensive production
 			</text>
 			<rect
@@ -49,14 +49,14 @@
 				fill='#A10033'
 				width='30' 
 				height='20' 
-				stroke='white' 
+				stroke='black' 
 				stroke-width='1' 
 				opacity='1' 
 			></rect>
 			<text
 				x='45'
 				y='54'
-				fill='#FFFFFF'
+				fill='#000000'
 				>Rushing
 			</text>
 			<rect
@@ -65,14 +65,14 @@
 				fill='#FF0000'
 				width='30' 
 				height='20' 
-				stroke='white' 
+				stroke='black' 
 				stroke-width='1' 
 				opacity='1' 
 			></rect>
 			<text
 				x='45'
 				y='79'
-				fill='#FFFFFF'
+				fill='#000000'
 				>Passing
 			</text>
 			<rect
@@ -110,7 +110,7 @@
 			<text
 				x='30' 
 				y='370' 
-				fill='#FFFFFF'
+				fill='#000000'
 			>{{loaded[0].team_name}}
 			</text>
 			<rect
@@ -149,10 +149,10 @@
 			<text
 				x='205' 
 				y='370' 
-				fill='#FFFFFF' 
+				fill='#000000' 
 			>{{loaded[1].team_name}}
 			</text>
-			<line x1='10' y1='349' x2='340' y2='349' stroke='white' stroke-width='1'></line>
+			<line x1='10' y1='349' x2='340' y2='349' stroke='black' stroke-width='1'></line>
 	</svg>
 	</script>
 	<script type='text/ng-template' id='scoring.html'>
@@ -160,21 +160,21 @@
 		<svg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 270' width="700" height="230" ng-attr-fill="#CFDBE8" style='float: left;'>
 			<polygon
 				points='70,200 630,200 518,100 181,100' 
-				fill='#A10033' 
+				fill='#7AFF7F' 
 				opacity='1' 
 				stroke='black' 
 				stroke-width='1' 
 				></polygon>
 			<polygon
 				points='70,200 170,200 241,100 181,100' 
-				fill='#FF0000' 
+				fill='#3789B9' 
 				opacity='1' 
 				stroke='black' 
 				stroke-width='1' 
 				></polygon>
 			<polygon
 				points='530,200 630,200 518,100 459,100' 
-				fill='#FF0000' 
+				fill='#3789B9' 
 				opacity='1' 
 				stroke='black' 
 				stroke-width='1' 
@@ -184,7 +184,7 @@
 				y1='200' 
 				ng-attr-x2='{{x2}}' 
 				y2='100' 
-				stroke='white' 
+				stroke='black' 
 				stroke-width='{{called}}' 
 				></line>
 			<circle
@@ -207,7 +207,7 @@
 			</circle>
 			<path 
 				d='{{path}}' 
-				stroke='white' 
+				stroke='black' 
 				stroke-width='{{pass}}' 
 				fill='none' 
 				></path>
@@ -216,7 +216,7 @@
 				y1='150' 
 				x2='528' 
 				y2='150' 
-				stroke='white' 
+				stroke='black' 
 				stroke-width='{{run}}' 			
 			></line>
 		</svg>
@@ -226,12 +226,18 @@
 				<div>{{$index + 1}}&nbsp;&nbsp;{{play.possession}}&nbsp;&nbsp;{{play.score_type}}&nbsp;&nbsp;{{play.yards + ' yards'}}</div>
 			</div>
 		</div>
+		<div class='scoreDetails'>
+			<p>
+				<div>{{loadUp.details}}</div>
+			</p>
+		</div>
+		<div class='clearfix'></div>
 	</div>
 	</script>
 	<script type='text/ng-template' id='timeline.html'>
-		<svg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 370' ng-attr-width="{{graph.width}}" ng-attr-height="{{graph.height}}" ng-attr-fill="#CFDBE8">
-			<polyline ng-attr-points="{{lineB}}" fill='none' stroke='#FFFFFF' stroke-width='1.5'/>
-			<polyline ng-attr-points="{{lineA}}" fill='none' stroke='#FFFFFF' stroke-width='1.5'/>
+		<svg version='1.1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 370' ng-attr-width="{{graph.width}}" ng-attr-height="{{graph.height}}" ng-attr-fill="#c8c8c8">
+			<polyline ng-attr-points="{{lineB}}" fill='none' stroke='#000000' stroke-width='1.5'/>
+			<polyline ng-attr-points="{{lineA}}" fill='none' stroke='#000000' stroke-width='1.5'/>
 			<g ng-repeat="ind in datasetA">
 				<circle
 					ng-attr-cx='{{ind.x}}'
@@ -248,9 +254,9 @@
 					fill='#D60000'
 				></circle>
 			</g>
-			<line x1='10' y1='349' x2='420' y2='349' stroke='white' stroke-width='1.5'
+			<line x1='10' y1='349' x2='420' y2='349' stroke='black' stroke-width='1.5'
 			></line>
-			<line x1='15' y1='355' x2='15' y2='20' stroke='white' stroke-width='1.5'
+			<line x1='15' y1='355' x2='15' y2='20' stroke='black' stroke-width='1.5'
 			></line> 
 			<g ng-repeat='point in datasetA'>
 				<circle ng-attr-cx='{{point.x}}' cy='349' r='2' fill='#000000'>
@@ -258,14 +264,14 @@
 				<text
 				ng-attr-x='{{point.x}}'
 				y='369' 
-				fill='#FFFFFF' 
+				fill='#000000' 
 				>{{$index + 1}}
 				</text>
 			</g>
 			<text
 			x='30'
 			y='0' 
-			fill='#FFFFFF' 
+			fill='#000000' 
 			>Score timeline</text>
 			<rect
 				x='30'
@@ -273,14 +279,14 @@
 				width='30'
 				height='20'
 				fill='#5600D6' 
-				stroke='white' 
+				stroke='black' 
 				stroke-width='1' 
 				opacity='1' 
 			></rect>
 			<text
 				x='70'
 				y='35'
-				fill='#FFFFFF' 
+				fill='#000000' 
 				>{{loaded[1].team_name}}</text>
 			<rect
 				x='30'
@@ -288,19 +294,19 @@
 				width='30'
 				height='20'
 				fill='#FF0000' 
-				stroke='white' 
+				stroke='black' 
 				stroke-width='1' 
 				opacity='1' 
 			></rect>
 			<text
 				x='70'
 				y='60'
-				fill='#FFFFFF' 
+				fill='#000000' 
 				>{{loaded[0].team_name}}</text>
 			<text 
 				x='200'
 				y='395'
-				fill='#FFFFFF' 
+				fill='#000000' 
 				>Quarter</text>
 
 		</svg>

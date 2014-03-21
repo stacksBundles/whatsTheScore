@@ -183,6 +183,7 @@ directives.directive('scoring', function() {
 				return ans
 			};
 			scope.loadPlay = function(ind) {
+				scope.loadUp = scope.scores[ind]
 				scope.giv = 0;
 				scope.called = 1.5;
 				if (scope.scores[ind].yards < 50) {

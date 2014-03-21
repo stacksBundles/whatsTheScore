@@ -9,6 +9,16 @@
 /*  LANDING PAGE   */
 /* ~~~~~~~~~~~~~~~ */
 
+.fakeLink {
+	color: #0088cc;
+}
+
+.fakeLink:hover {
+	color: rgb(0, 96, 184);
+	cursor: pointer;
+	text-decoration: underline;
+}
+
 #pseudoBody {
 	font-family: 'Baskerville' Times Serif;
 	background-color: #FDFCE8;
@@ -51,6 +61,10 @@
 		float: left;
 		margin-left: 10px;
 	}
+
+	.listHead:hover {
+		cursor: pointer;
+	}
 }
 
 .backBox {
@@ -75,6 +89,10 @@
 	.listHead {
 		float: left;
 		margin-left: 10px;
+	}
+
+	.listHead:hover {
+		cursor: pointer;
 	}
 }
 
@@ -774,29 +792,40 @@ body .contentWell .rightFrame .highlight {
 .visualBox {
 	float: left;
 	display: inline-block;
-	width: 340px;
+	width: 344px;
 	height: 448px;
 	padding-right: 8px;
 	margin-right: 0px;
-	background-color: #1F021E;
+	background-color: rgb(230, 230, 230);
 }
 
 .visualBox2 {
 	float: left;
-	width: 700px;
+	width: 704px;
 	height: 448px;
 	margin-right: 0px;
-	background-color: #1F021E;
+	background-color: rgb(230, 230, 230);
 }
 
 .scoringList {
 	padding: 8px;
 	float: left;
-	min-height: 184px;
-	max-height: 184px;
+	min-height: 199px;
+	max-height: 199px;
 	overflow: scroll;
 	background-color: rgb(255, 255, 255);
 	border: 1px solid rgb(221, 221, 221);
+}
+
+.scoreDetails {
+	float: left;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid rgb(221, 221, 221);
+	max-width: 356px;
+	min-width: 356px;
+	padding: 8px;
+	min-height: 199px;
+	max-height: 199px;
 }
 
 .playBar {
